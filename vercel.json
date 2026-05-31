@@ -1,4 +1,21 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/pelecristal",
+      "destination": "https://pay.hotmart.com/E106041550M?off=g69bqwmr&checkoutMode=10",
+      "permanent": false
+    },
+    {
+      "source": "/pele-de-cristal",
+      "destination": "https://pay.hotmart.com/E106041550M?off=g69bqwmr&checkoutMode=10",
+      "permanent": false
+    },
+    {
+      "source": "/comprar",
+      "destination": "https://pay.hotmart.com/E106041550M?off=g69bqwmr&checkoutMode=10",
+      "permanent": false
+    }
+  ]
 }
