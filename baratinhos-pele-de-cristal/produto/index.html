@@ -1,0 +1,2607 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baratinhos da Pele de Cristal — Order Bump — Pele de Cristal</title>
+<style>
+/* PELE DE CRISTAL — Estilo coreano minimalista */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --cream: #FAF6EE;
+  --cream-dark: #F2EBDA;
+  --beige: #E4D9C0;
+  --ivory: #F6F1E6;
+  --text: #2C2520;
+  --text-soft: #5A4A38;
+  --heading: #3D2E1F;
+  --gold: #B8924F;
+  --gold-soft: #D4B47A;
+  --burgundy: #6E2D2B;
+  --burgundy-soft: #8A4543;
+  --blush: #F5D5CB;
+  --peach: #F4C8B4;
+  --sakura: #F8DCD3;
+  --rose-soft: #E8B8A9;
+  --sage: #9DB590;
+  --sage-soft: #C5D4B9;
+  --sage-bg: #EDF2E7;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background:
+    radial-gradient(ellipse at 15% 0%, rgba(245, 213, 203, 0.18) 0%, transparent 45%),
+    radial-gradient(ellipse at 85% 100%, rgba(244, 200, 180, 0.12) 0%, transparent 50%),
+    var(--cream);
+  color: var(--text);
+  line-height: 1.75;
+  font-size: 17px;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 90px 48px 120px;
+}
+
+.chapter-num {
+  display: block; text-align: center;
+  font-family: 'Playfair Display', serif; font-style: italic;
+  color: var(--gold); letter-spacing: 0.25em; text-transform: uppercase;
+  font-size: 0.8em; margin-bottom: 1.5em; font-weight: 400;
+}
+.chapter-num::before { content: "❀ "; color: var(--rose-soft); letter-spacing: normal; }
+.chapter-num::after { content: " ❀"; color: var(--rose-soft); letter-spacing: normal; }
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6em; line-height: 1.2;
+  color: var(--heading); font-weight: 400; text-align: center;
+  margin-bottom: 0.4em; letter-spacing: -0.015em;
+}
+
+.subtitle {
+  display: block; text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 1em; font-weight: 400;
+  color: var(--text-soft); margin-bottom: 3em;
+  letter-spacing: 0.02em; font-style: italic;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7em; color: var(--heading); font-weight: 500;
+  margin-top: 2.5em; margin-bottom: 0.8em;
+  padding-bottom: 0.4em; border-bottom: 1px solid var(--beige);
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3em; color: var(--burgundy);
+  font-weight: 500; margin-top: 1.8em; margin-bottom: 0.6em;
+}
+
+h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1em; color: var(--burgundy);
+  font-weight: 500; margin-top: 1.4em; margin-bottom: 0.5em;
+  font-style: italic;
+}
+
+p { margin-bottom: 1.3em; color: var(--text); }
+ul, ol { margin-left: 1.5em; margin-bottom: 1.5em; }
+li { margin-bottom: 0.6em; line-height: 1.7; }
+strong { color: var(--heading); font-weight: 600; }
+em { color: var(--burgundy-soft); font-style: italic; }
+
+a {
+  color: var(--burgundy); text-decoration: none;
+  border-bottom: 1px solid var(--gold-soft);
+  transition: all 0.2s ease;
+}
+a:hover { color: var(--gold); border-bottom-color: var(--gold); }
+
+hr {
+  border: none; border-top: 1px solid var(--beige);
+  margin: 3em auto; max-width: 200px;
+}
+
+blockquote {
+  background: linear-gradient(135deg, var(--cream-dark) 0%, rgba(248, 220, 211, 0.35) 100%);
+  border-left: 3px solid var(--gold);
+  padding: 1.5em 2em; margin: 2em 0;
+  font-family: 'Playfair Display', serif; font-style: italic;
+  color: var(--text-soft); font-size: 1.05em; line-height: 1.6;
+  position: relative;
+}
+blockquote::after {
+  content: "❀"; position: absolute; top: 0.8em; right: 1em;
+  color: var(--rose-soft); opacity: 0.35; font-size: 1.2em;
+}
+blockquote p:last-child { margin-bottom: 0; }
+
+table {
+  width: 100%; border-collapse: collapse; margin: 2em 0;
+  font-size: 0.95em; background: var(--ivory);
+  border-radius: 4px; overflow: hidden;
+}
+th {
+  background: var(--cream-dark); font-family: 'Playfair Display', serif;
+  font-weight: 500; text-align: left; padding: 1em 1.2em;
+  border-bottom: 2px solid var(--gold); color: var(--heading); font-size: 1em;
+}
+td { padding: 0.9em 1.2em; border-bottom: 1px solid var(--beige); color: var(--text); vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+
+.signature {
+  text-align: right; font-family: 'Playfair Display', serif;
+  font-size: 1.3em; color: var(--burgundy);
+  margin-top: 3em; font-style: italic;
+}
+
+.divider-ornament { text-align: center; margin: 3em 0; letter-spacing: 0.8em; font-size: 0.9em; }
+.divider-ornament::before { content: "❀  ✦  ❀"; color: var(--rose-soft); }
+
+.callout {
+  background: linear-gradient(135deg, var(--ivory) 0%, var(--cream-dark) 100%);
+  border: 1px solid var(--beige); border-radius: 4px;
+  padding: 1.5em 1.8em; margin: 2em 0;
+}
+.callout strong { color: var(--burgundy); }
+
+.aviso {
+  background: linear-gradient(135deg, rgba(248, 220, 211, 0.5) 0%, rgba(244, 200, 180, 0.3) 100%);
+  border: 1px solid var(--rose-soft); border-radius: 6px;
+  padding: 1.6em 1.8em; margin: 3.5em 0 1.5em;
+  font-size: 0.92em; color: var(--text-soft); line-height: 1.75;
+}
+.aviso h2 {
+  font-family: 'Playfair Display', serif; font-style: italic;
+  font-size: 1.25em; color: var(--burgundy);
+  margin: 0 0 0.7em 0; padding: 0; border: none;
+}
+.aviso h2::before { content: "❀ "; color: var(--rose-soft); font-style: normal; }
+.aviso strong { color: var(--burgundy); font-weight: 600; }
+.aviso p { margin-bottom: 0.8em; }
+.aviso p:last-child { margin-bottom: 0; }
+
+.dica-verde {
+  background: linear-gradient(135deg, rgba(157, 181, 144, 0.10) 0%, rgba(197, 212, 185, 0.18) 100%);
+  border-left: 3px solid var(--sage); border-radius: 4px;
+  padding: 1.3em 1.6em; margin: 2em 0;
+  font-size: 0.95em; color: var(--text-soft);
+}
+.dica-verde h4 {
+  font-family: 'Playfair Display', serif; font-style: italic;
+  font-size: 1.1em; color: var(--sage);
+  font-weight: 500; margin: 0 0 0.6em 0;
+  padding: 0; border: none; letter-spacing: 0.01em;
+}
+.dica-verde h4::before { content: "❀ "; color: var(--sage-soft); font-style: normal; }
+.dica-verde p { margin-bottom: 0.7em; color: var(--text); }
+.dica-verde p:last-child { margin-bottom: 0; }
+.dica-verde strong { color: var(--sage); }
+.dica-verde ul { margin: 0.5em 0 0.5em 1.3em; }
+.dica-verde ul li { margin-bottom: 0.4em; }
+
+.container {
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><defs><radialGradient id='p' cx='50%25' cy='70%25' r='70%25'><stop offset='0%25' stop-color='%23FFFFFF' stop-opacity='0.9'/><stop offset='50%25' stop-color='%23FCE4E0' stop-opacity='0.85'/><stop offset='100%25' stop-color='%23F5C8C0' stop-opacity='0.8'/></radialGradient></defs><g transform='translate(60,60) rotate(-15)'><g><path d='M 0,-5 Q -15,-15 -12,-30 Q -6,-45 0,-50 Q 6,-45 12,-30 Q 15,-15 0,-5' fill='url(%23p)'/></g><g transform='rotate(72)'><path d='M 0,-5 Q -15,-15 -12,-30 Q -6,-45 0,-50 Q 6,-45 12,-30 Q 15,-15 0,-5' fill='url(%23p)'/></g><g transform='rotate(144)'><path d='M 0,-5 Q -15,-15 -12,-30 Q -6,-45 0,-50 Q 6,-45 12,-30 Q 15,-15 0,-5' fill='url(%23p)'/></g><g transform='rotate(216)'><path d='M 0,-5 Q -15,-15 -12,-30 Q -6,-45 0,-50 Q 6,-45 12,-30 Q 15,-15 0,-5' fill='url(%23p)'/></g><g transform='rotate(288)'><path d='M 0,-5 Q -15,-15 -12,-30 Q -6,-45 0,-50 Q 6,-45 12,-30 Q 15,-15 0,-5' fill='url(%23p)'/></g><circle r='6' fill='%23FFEEAA'/></g></svg>");
+  background-repeat: no-repeat;
+  background-position: -40px 5%;
+  background-size: 220px;
+  background-attachment: scroll;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body { font-size: 16.5px; }
+  .container { max-width: 92%; padding: 70px 36px 90px; }
+  h1 { font-size: 2.3em; }
+  h2 { font-size: 1.55em; }
+  h3 { font-size: 1.22em; }
+}
+@media (min-width: 1200px) {
+  .container { max-width: 760px; padding: 100px 56px 130px; }
+  body { font-size: 17.5px; line-height: 1.78; }
+}
+@media (max-width: 768px) {
+  body { font-size: 16px; }
+  .container { padding: 50px 20px 70px; }
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.4em; }
+  h3 { font-size: 1.15em; }
+}
+
+.print-floating {
+  position: fixed; top: 20px; right: 20px; z-index: 9999;
+  background: var(--cream); border: 1.5px solid var(--gold);
+  color: var(--gold); width: 48px; height: 48px;
+  border-radius: 50%; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 12px rgba(184, 146, 79, 0.18);
+  transition: all 0.25s ease; opacity: 0.75;
+}
+.print-floating:hover { opacity: 1; background: var(--gold); color: var(--cream); transform: translateY(-2px); }
+.print-floating svg { width: 22px; height: 22px; display: block; }
+@media (max-width: 768px) { .print-floating { top: 12px; right: 12px; width: 42px; height: 42px; } .print-floating svg { width: 19px; height: 19px; } }
+@media print { .print-floating { display: none !important; } }
+
+body.app-mode { padding-top: 60px; padding-bottom: 80px; }
+body.app-mode .container { padding-top: 30px; padding-bottom: 30px; }
+.page-block { display: none; }
+.page-block.active { display: block; animation: fadeIn 0.3s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+.app-header {
+  position: fixed; top: 0; left: 0; right: 0; height: 60px;
+  background: var(--cream); border-bottom: 1px solid var(--beige);
+  display: flex; align-items: center; padding: 0 16px;
+  z-index: 100; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(8px);
+}
+.app-header .menu-btn, .app-header .home-btn {
+  background: none; border: none; cursor: pointer;
+  padding: 10px; display: flex; align-items: center;
+  justify-content: center; border-radius: 8px; transition: background 0.2s;
+}
+.app-header .menu-btn:hover, .app-header .home-btn:hover { background: var(--cream-dark); }
+.app-header .menu-icon { display: flex; flex-direction: column; justify-content: space-between; width: 22px; height: 16px; }
+.app-header .menu-icon span { display: block; height: 2px; background: var(--burgundy); border-radius: 2px; }
+.app-header .home-btn { color: var(--gold); font-family: 'Playfair Display', serif; font-size: 1.1em; }
+.app-header .app-title {
+  flex: 1; text-align: center;
+  font-family: 'Playfair Display', serif; font-style: italic;
+  color: var(--burgundy); font-size: 1em;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: 0 12px;
+}
+
+.app-footer {
+  position: fixed; bottom: 0; left: 0; right: 0; height: 72px;
+  background: var(--cream); border-top: 1px solid var(--beige);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 12px; z-index: 100;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.04);
+}
+.app-footer .nav-btn {
+  flex: 1; display: flex; flex-direction: column;
+  font-family: 'Playfair Display', serif; font-style: italic;
+  font-size: 0.9em; color: var(--burgundy);
+  border: none; background: none;
+  padding: 10px 14px; cursor: pointer; max-width: 45%; text-align: center;
+}
+.app-footer .nav-btn .label {
+  font-family: 'Inter', sans-serif; font-style: normal;
+  font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 4px; font-weight: 500;
+}
+.app-footer .nav-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+.app-footer .page-counter {
+  font-family: 'Inter', sans-serif; font-size: 11px;
+  color: var(--text-soft); text-align: center; padding: 0 8px; min-width: 60px;
+}
+
+.drawer-overlay {
+  position: fixed; inset: 0; background: rgba(44, 37, 32, 0.45);
+  z-index: 200; opacity: 0; pointer-events: none; transition: opacity 0.3s;
+}
+.drawer-overlay.open { opacity: 1; pointer-events: auto; }
+.drawer {
+  position: fixed; top: 0; left: 0; width: 290px; max-width: 85vw;
+  height: 100%; background: var(--cream); z-index: 201;
+  transform: translateX(-100%); transition: transform 0.3s ease;
+  overflow-y: auto; box-shadow: 2px 0 16px rgba(0, 0, 0, 0.1);
+}
+.drawer.open { transform: translateX(0); }
+.drawer-header { padding: 24px 20px 18px; border-bottom: 1px solid var(--beige); position: relative; }
+.drawer-header .title { font-family: 'Playfair Display', serif; color: var(--burgundy); font-size: 1.3em; font-weight: 500; }
+.drawer-close { position: absolute; top: 16px; right: 16px; background: none; border: none; cursor: pointer; color: var(--text-soft); font-size: 1.4em; padding: 4px 8px; }
+.drawer ul { list-style: none; margin: 0; padding: 12px 0; }
+.drawer ul li a { display: flex; padding: 10px 20px; color: var(--text); text-decoration: none; border: none; font-size: 0.9em; transition: background 0.2s; }
+.drawer ul li a:hover, .drawer ul li a.active { background: var(--cream-dark); color: var(--burgundy); }
+.drawer ul li a .num { display: inline-block; min-width: 30px; color: var(--gold); font-family: 'Playfair Display', serif; font-style: italic; }
+
+@media print {
+  .app-header, .app-footer, .drawer, .drawer-overlay { display: none !important; }
+  .page-block { display: block !important; }
+  body.app-mode { padding: 0 !important; }
+}
+
+
+</style>
+<style>
+  /* ESTILOS ESPECÍFICOS — Baratinhos da Pele de Cristal */
+
+  .price-tag {
+    display: inline-block;
+    background: var(--burgundy); color: white;
+    font-family: 'Playfair Display', serif; font-style: italic;
+    padding: 0.35em 1.1em; border-radius: 20px;
+    font-size: 0.85em; letter-spacing: 0.04em;
+    margin-left: 0.5em; vertical-align: middle;
+  }
+
+  .secao-categoria {
+    background: linear-gradient(135deg, var(--cream-dark) 0%, rgba(248, 220, 211, 0.25) 100%);
+    border-radius: 6px;
+    padding: 1.4em 1.6em;
+    margin: 2.5em 0 1.5em;
+    text-align: center;
+  }
+  .secao-categoria h2 {
+    margin: 0; border: none; padding: 0;
+    color: var(--burgundy); font-size: 1.5em;
+    letter-spacing: 0.03em;
+  }
+  .secao-categoria .secao-subtitle {
+    font-style: italic; color: var(--text-soft);
+    font-size: 0.95em; margin-top: 0.3em; display: block;
+  }
+
+  .produto-card {
+    background: var(--ivory);
+    border: 1px solid var(--beige);
+    border-radius: 8px;
+    padding: 1.6em 1.4em;
+    margin: 2em 0 2.5em;
+    box-shadow: 0 2px 8px rgba(184, 146, 79, 0.06);
+    position: relative;
+  }
+  .produto-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold-soft), var(--gold), var(--gold-soft));
+    border-radius: 8px 8px 0 0;
+  }
+
+  .produto-header {
+    display: flex; align-items: flex-start;
+    gap: 1.2em; margin-bottom: 1em;
+  }
+
+  .produto-foto-wrap {
+    flex-shrink: 0;
+    width: 110px; height: 110px;
+    border-radius: 6px; overflow: hidden;
+    background: linear-gradient(135deg, var(--cream) 0%, var(--cream-dark) 100%);
+    border: 1px dashed var(--gold-soft);
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--gold);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    position: relative;
+  }
+  .produto-foto-wrap .num-grande {
+    font-size: 1.8em; font-weight: 500;
+    color: var(--burgundy); line-height: 1;
+    margin-bottom: 0.2em;
+  }
+  .produto-foto-wrap .placeholder-label {
+    font-size: 0.62em;
+    color: var(--text-soft);
+    font-style: italic;
+    line-height: 1.2;
+    padding: 0 4px;
+  }
+  .produto-foto-wrap img {
+    width: 100%; height: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: white;
+  }
+  .produto-foto-wrap img[src]:not([src=""]) ~ .num-grande,
+  .produto-foto-wrap img[src]:not([src=""]) ~ .placeholder-label { display: none; }
+
+  .produto-titulo {
+    flex: 1; min-width: 0;
+  }
+  .produto-titulo h3 {
+    margin: 0 0 0.35em 0;
+    color: var(--burgundy);
+    font-size: 1.2em;
+    line-height: 1.3;
+  }
+  .produto-titulo .preco {
+    display: inline-block;
+    background: var(--burgundy);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.78em;
+    padding: 0.2em 0.7em;
+    border-radius: 12px;
+    letter-spacing: 0.04em;
+    margin-right: 0.4em;
+  }
+  .produto-titulo .categoria-tag {
+    display: inline-block;
+    background: var(--sage-soft);
+    color: var(--heading);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7em;
+    font-weight: 500;
+    padding: 0.15em 0.65em;
+    border-radius: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  .produto-info {
+    font-size: 0.95em;
+    color: var(--text);
+    line-height: 1.65;
+  }
+  .produto-info p { margin-bottom: 0.7em; }
+  .produto-info p:last-of-type { margin-bottom: 0.5em; }
+  .produto-info .label-info {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 500;
+    margin-right: 0.3em;
+  }
+
+  .produto-info .destaque-aviso {
+    background: rgba(110, 45, 43, 0.05);
+    border-left: 2px solid var(--rose-soft);
+    padding: 0.6em 0.9em;
+    margin: 0.7em 0;
+    font-size: 0.92em;
+    color: var(--text-soft);
+    border-radius: 0 4px 4px 0;
+  }
+
+  .link-afiliado {
+    display: inline-block;
+    margin-top: 0.7em;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.92em;
+    font-weight: 600;
+    color: #fff !important;
+    background: var(--burgundy);
+    padding: 0.7em 1.3em;
+    border-radius: 6px;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    box-shadow: 0 3px 8px rgba(96, 36, 36, 0.25);
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+    border: none;
+  }
+  .link-afiliado:hover {
+    background: var(--gold);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(151, 116, 76, 0.35);
+  }
+  .link-afiliado::before {
+    content: "🛒 ";
+    margin-right: 0.2em;
+  }
+  .link-em-breve {
+    display: inline-block;
+    margin-top: 0.7em;
+    padding: 0.7em 1.3em;
+    background: var(--cream-dark);
+    color: var(--text-soft);
+    border-radius: 6px;
+    font-style: italic;
+    font-size: 0.88em;
+    letter-spacing: 0.02em;
+    border: 1px dashed var(--gold-soft);
+  }
+  /* No produto-titulo: botão fica destacado logo abaixo do nome */
+  .produto-titulo .link-afiliado,
+  .produto-titulo .link-em-breve {
+    margin-top: 0.6em;
+    display: inline-block;
+  }
+
+  /* Passo de protocolo */
+  .passo-card {
+    background: linear-gradient(135deg, var(--ivory) 0%, var(--cream-dark) 100%);
+    border: 1px solid var(--beige);
+    border-left: 4px solid var(--gold);
+    border-radius: 6px;
+    padding: 1.5em 1.8em;
+    margin: 1.8em 0;
+  }
+  .passo-card h3 {
+    margin: 0 0 0.6em 0;
+    color: var(--burgundy);
+    font-size: 1.2em;
+    line-height: 1.3;
+  }
+  .passo-card .passo-num {
+    display: inline-block;
+    background: var(--gold);
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    padding: 0.15em 0.8em;
+    border-radius: 12px;
+    font-size: 0.85em;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.6em;
+  }
+  .passo-card p { margin-bottom: 0.7em; }
+  .passo-card ul { margin: 0.5em 0 0.8em 1.3em; }
+
+  /* Tipo de olheira card */
+  .tipo-olheira {
+    background: var(--ivory);
+    border: 1px solid var(--beige);
+    border-top: 3px solid var(--gold-soft);
+    padding: 1.3em 1.6em;
+    border-radius: 0 0 4px 4px;
+    margin: 1.5em 0;
+  }
+  .tipo-olheira h4 {
+    margin-top: 0;
+    color: var(--burgundy);
+    font-size: 1.1em;
+  }
+
+  @media (max-width: 768px) {
+    .produto-card { padding: 1.2em 1em; }
+    .produto-header { flex-direction: column; align-items: center; text-align: center; gap: 1em; }
+    .produto-foto-wrap { width: 130px; height: 130px; }
+    .produto-titulo h3 { font-size: 1.15em; }
+    .passo-card { padding: 1.2em 1.2em; }
+  }
+</style>
+</head>
+<body>
+
+<button class="print-floating" onclick="window.print()" aria-label="Imprimir esta página" title="Imprimir esta página">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <polyline points="6 9 6 2 18 2 18 9"></polyline>
+    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+    <rect x="6" y="14" width="12" height="8"></rect>
+  </svg>
+</button>
+
+<div class="container">
+
+<div class="page-block">
+<span class="chapter-num">Order Bump 05</span>
+  <h1>Baratinhos da Pele de Cristal</h1>
+  <div class="subtitle">Os produtos de farmácia e K-Beauty que eu confio + 4 protocolos coreanos pra rosto, mãos, olheiras e axilas</div>
+
+  <p style="text-align:center; margin-top:-1em;"><span class="price-tag">Indicações da Han</span></p>
+
+  <h2>Antes de começar</h2>
+
+  <p>Esse guia que você adicionou ao carrinho é o <strong>companheiro de prateleira</strong> do produto principal Pele de Cristal.</p>
+
+  <p>O livro principal te ensina os <strong>rituais com ingredientes da sua cozinha</strong> — mel, limão, iogurte, óleo de coco, chá verde, abacate. Aqui você vai conhecer o <strong>outro lado</strong>: os produtos prontos de farmácia e de marca coreana que valem cada centavo, com o preço médio e o jeito certo de usar.</p>
+
+  <blockquote>Eu cansei de ver mulher gastando R$ 200 num clareador que não faz nada e ignorando uma vaselina de R$ 8 que faria diferença real no problema dela, com paciência.</blockquote>
+
+  <h2>O que você vai encontrar aqui</h2>
+
+  <p>São <strong>4 partes</strong>:</p>
+
+  <ul>
+    <li><strong>Parte 1 — Skincare pra iniciantes:</strong> a rotina básica de 3 passos pra quem está começando, e o próximo nível com os ácidos. Sem isso bem feito, nenhum produto caro funciona.</li>
+    <li><strong>Parte 2 — Baratinhos de farmácia brasileira:</strong> 27 produtos que custam de R$ 3 a R$ 90. A maioria você acha em qualquer farmácia ou supermercado.</li>
+    <li><strong>Parte 3 — K-Beauty coreano:</strong> 11 produtos coreanos que valem a pena. Esses podem ser comprados pela internet — abaixo de cada um eu deixei os links que eu recomendo e que <strong>não são falsificados</strong>. O mercado de beleza coreana é o que mais sofre com falsificações no Brasil, então fique atenta.</li>
+    <li><strong>Parte 4 — 4 protocolos coreanos:</strong> Mãos de Fada (mãos sem manchas), Xô Olheiras (cada tipo tem solução), Chega de Axilas Escuras (passo a passo completo) — instruções claras de como combinar os produtos pra ter resultado de verdade.</li>
+  </ul>
+
+  <p>Pra cada produto, você tem:</p>
+  <ul>
+    <li><strong>O que é</strong> — em linguagem clara, sem jargão</li>
+    <li><strong>Pra quê serve</strong> — qual problema ele resolve</li>
+    <li><strong>Como usar</strong> — frequência, quantidade, hora do dia</li>
+    <li><strong>Cuidados</strong> — quem deve evitar, o que não fazer</li>
+    <li><strong>Preço médio</strong> — pra você saber se a oferta que viu vale a pena</li>
+    <li><strong>Onde encontrar</strong> — link verificado, sem falsificação</li>
+  </ul>
+
+  <div class="dica-verde">
+    <h4>Como usar esse guia direito</h4>
+    <p><strong>Não compre tudo.</strong> A ideia aqui é o oposto de "lista de desejos". Você lê, identifica seu problema (mancha, ruga, oleosidade, caspa, queda, olheira, axila escura), vai direto no produto ou protocolo que resolve, e usa de 30 a 60 dias com disciplina. Só depois, se quiser, compra outro.</p>
+    <p>Comprar 10 produtos ao mesmo tempo é o caminho mais rápido pra ficar com a pele irritada, sem saber o que funcionou e o que não funcionou.</p>
+  </div>
+
+  <div class="dica-verde">
+    <h4>Sobre os links de compra</h4>
+    <p>O mercado de beleza coreana é o que mais sofre com falsificações no Brasil. Por isso eu deixo, abaixo de cada produto, um link de loja que eu já verifiquei — onde você compra <strong>o produto original</strong>, não uma falsificação. Esses links são as indicações da Han: lugares onde eu confio comprar.</p>
+    <p>Se preferir comprar por outro caminho, fique atenta a preços muito abaixo do normal e a vendedores sem selo de "oficial". É aí que a falsificação aparece.</p>
+  </div>
+</div>
+
+<div class="page-block">
+<h2>Antes de qualquer compra — 5 regras</h2>
+
+  <p>Antes de você ir pra primeira página de produtos, leia essas 5 regras. Elas vão te poupar muito dinheiro e muita irritação na pele.</p>
+
+  <h3>1. Faça teste de alergia em TUDO que for novo</h3>
+  <p>Independente do que diga o rótulo ou eu. Aplique uma pequena quantidade na parte interna do braço, espere 24 horas. Se aparecer vermelhidão, coceira ou ardência, <strong>não use</strong> aquele produto no rosto ou no couro cabeludo.</p>
+
+  <h3>2. Protetor solar é não-negociável</h3>
+  <p>Quase todo produto com ácido (salicílico, glicólico, tranexâmico, retinal) deixa a pele <strong>muito mais sensível à luz do sol</strong>. Sem protetor solar diário FPS 30 ou maior, o efeito desses produtos se inverte e <strong>piora as manchas</strong>. É a regra de ouro.</p>
+
+  <h3>3. Introduza um ácido por vez, lentamente</h3>
+  <p>Não comece com 5 ácidos diferentes no mesmo dia. Pegue UM, use 2-3 vezes na primeira semana, vai aumentando gradualmente. Combinar muitos ativos fortes ao mesmo tempo destrói a barreira da pele.</p>
+
+  <h3>4. Pele 50+ é mais sensível</h3>
+  <p>Pele madura é mais fina, com menos colágeno, mais propensa a irritação. Use sempre <strong>menos quantidade</strong> do que indica o rótulo, e <strong>menos frequência</strong>. Começar suave é sempre melhor.</p>
+
+  <h3>5. Se tiver dúvida séria, vá ao dermatologista</h3>
+  <p>Nenhum guia substitui consulta médica. Se você tem condição de pele específica (rosácea, eczema, melasma persistente, alopecia), passe primeiro no SUS ou no particular antes de comprar qualquer produto.</p>
+</div>
+
+<div class="page-block">
+<div class="secao-categoria">
+  <h2>PARTE 1 — Skincare Pra Iniciantes</h2>
+  <span class="secao-subtitle">A rotina básica de 3 passos + os ácidos do próximo nível</span>
+</div>
+
+<h2>A verdade que a indústria não quer que você saiba</h2>
+
+<p>A indústria de cosméticos quer te vender <strong>bruma, stick, essência, água de beleza, água de transformação</strong>... É tanta coisa que você nem sabe por onde começar.</p>
+
+<p>Mas a verdade é simples: pra ter pele saudável, você precisa de <strong>apenas três passos</strong>. Três. Só isso.</p>
+
+<div class="dica-verde">
+  <h4>Os 3 pilares essenciais</h4>
+  <p><strong>PASSO 1 — LIMPEZA:</strong> higienizar o rosto com um sabonete adequado pro seu tipo de pele.</p>
+  <p><strong>PASSO 2 — HIDRATAÇÃO:</strong> obrigatório pra todos os tipos de pele — sim, pele oleosa também precisa.</p>
+  <p><strong>PASSO 3 — PROTEÇÃO SOLAR:</strong> seu melhor aliado contra manchas e envelhecimento.</p>
+</div>
+
+<h3>Como ficam os 3 passos no seu dia</h3>
+
+<table>
+  <tr><th>Momento</th><th>O que fazer</th></tr>
+  <tr><td><strong>Manhã</strong></td><td>Limpeza + hidratante + filtro solar</td></tr>
+  <tr><td><strong>Tarde</strong></td><td>Reaplicar o filtro solar (não precisa passar mais nada)</td></tr>
+  <tr><td><strong>Noite</strong></td><td>Limpeza + hidratante</td></tr>
+</table>
+
+<h2>Como escolher o produto certo pro seu tipo de pele</h2>
+
+<p>Antes de comprar qualquer coisa, identifique o seu tipo de pele. Depois consulte a tabela:</p>
+
+<table>
+  <tr><th>Tipo de pele</th><th>Limpeza</th><th>Hidratação</th><th>Protetor solar</th></tr>
+  <tr>
+    <td><strong>Mista / Oleosa</strong></td>
+    <td>Gel de limpeza com controle de oleosidade e ácidos</td>
+    <td>Gel hidratante leve — não deixa a pele oleosa</td>
+    <td>Filtro solar fluido ou matte</td>
+  </tr>
+  <tr>
+    <td><strong>Normal / Seca</strong></td>
+    <td>Gel suave com glicerina — limpa sem repuxar</td>
+    <td>Creme hidratante — textura mais rica</td>
+    <td>Filtro solar hidratante ou fluido</td>
+  </tr>
+  <tr>
+    <td><strong>Sensível / Madura</strong></td>
+    <td>Gel com muita glicerina e extrato calmante — limpa já hidratando</td>
+    <td>Creme calmante — recupera a barreira da pele</td>
+    <td>Filtro solar calmante ou com cor</td>
+  </tr>
+</table>
+
+<div class="dica-verde">
+  <h4>Como saber qual é o seu tipo de pele</h4>
+  <p><strong>Oleosa:</strong> a pele brilha sobretudo na zona T (testa, nariz, queixo) ao longo do dia. Poros mais visíveis.</p>
+  <p><strong>Mista:</strong> zona T oleosa, mas bochechas normais ou secas.</p>
+  <p><strong>Normal:</strong> pele equilibrada, sem extremos.</p>
+  <p><strong>Seca:</strong> sensação de repuxar, descamação, vermelhidão fácil.</p>
+  <p><strong>Sensível:</strong> reage a quase tudo — vermelhidão, ardência, alergia frequente.</p>
+  <p><strong>Madura</strong> (após menopausa): tende a ficar mais seca e fina, mesmo se antes era oleosa. Trata como pele seca/sensível.</p>
+</div>
+</div>
+
+<div class="page-block">
+<h2>Os ácidos — o próximo nível</h2>
+
+<p>Depois que você dominou a rotina básica (limpeza + hidratante + filtro solar) por algumas semanas, pode incluir um <strong>ácido à noite</strong> pra tratar queixas específicas. Cada ácido age de um jeito diferente — escolha de acordo com o que você quer melhorar na sua pele.</p>
+
+<div class="dica-verde">
+  <h4>Duas regras de ouro pros ácidos</h4>
+  <p><strong>Ácidos são de NOITE</strong> — por isso o protetor solar de manhã passa a ser ainda mais obrigatório.</p>
+  <p><strong>Comece com 1 vez por semana</strong> e aumente gradualmente conforme sua pele se acostuma.</p>
+</div>
+
+<h3>Ácido Salicílico</h3>
+<p><strong>O que é:</strong> derivado natural do salgueiro, hoje produzido sinteticamente em laboratório.</p>
+<p><strong>Pra quê serve:</strong> controlar oleosidade, reduzir a aparência de poros, secar espinhas e acne.</p>
+<p><strong>Ideal pra:</strong> pele oleosa, mista, com espinhas e poros dilatados.</p>
+
+<h3>Retinol (Retinoide)</h3>
+<p><strong>O que é:</strong> faz parte da família dos retinoides — é o cosmético com a maior evidência científica pra estimular colágeno. Não é remédio, é cosmético.</p>
+<p><strong>Pra quê serve:</strong> estimular a produção de colágeno, melhorar linhas finas e ruguinhas, melhorar a textura e qualidade geral da pele.</p>
+<p><strong>Ideal pra:</strong> prevenção e tratamento de rugas e linhas de expressão. <strong>Mulher 50+ pode usar com cuidado.</strong></p>
+
+<h3>Vitamina C (Ácido Ascórbico)</h3>
+<p><strong>O que é:</strong> um dos antioxidantes mais estudados em cosmética — impede o envelhecimento precoce (oxidação no corpo = envelhecimento).</p>
+<p><strong>Pra quê serve:</strong> dar luminosidade e viço à pele, clarear levemente manchas, potencializar o filtro solar (age junto, protegendo dos raios do sol).</p>
+<p><strong>Ideal pra:</strong> quem quer mais brilho e proteção extra contra manchas e envelhecimento.</p>
+
+<h3>Ácido Tranexâmico</h3>
+<p><strong>O que é:</strong> composto sintético que parece um aminoácido (pedacinho de proteína).</p>
+<p><strong>Pra quê serve:</strong> tratar olheiras roxinhas (vasculares), tratar melasma vascular, clarear manchas específicas que dependem de vasinhos.</p>
+<p><strong>Ideal pra:</strong> olheiras escuras e melasma vascular (quando o médico confirma que é vascular).</p>
+
+<h3>Niacinamida (Vitamina B3)</h3>
+<p><strong>O que é:</strong> a vitamina B3 — ativo multipropósito, um dos mais versáteis de todo o skincare.</p>
+<p><strong>Pra quê serve:</strong> clarear manchas, controlar oleosidade, melhorar linhas finas, reduzir aparência de poros, uniformizar o tom geral da pele.</p>
+<p><strong>Ideal pra:</strong> quem quer tratar várias queixas ao mesmo tempo com um único ativo. <strong>Excelente opção pra começar.</strong></p>
+
+<h3>Ácido Kójico / Ácido Lático</h3>
+<p><strong>O que é:</strong> o ácido kójico foi originalmente extraído da água do arroz — o segredo de beleza das asiáticas e coreanas há séculos. O ácido lático é um esfoliante suave com propriedades clareadoras.</p>
+<p><strong>Pra quê serve:</strong> clarear manchas (de forma suave a moderada), acalmar peles sensíveis e com rosácea, estimular a renovação celular de forma gentil.</p>
+<p><strong>Ideal pra:</strong> peles sensíveis, sensibilizadas, com rosácea ou manchas leves.</p>
+
+<h3>Resumo rápido — qual ácido pra cada queixa</h3>
+
+<table>
+  <tr><th>Sua queixa</th><th>Ácido indicado</th></tr>
+  <tr><td>Oleosidade, poros dilatados, espinhas</td><td><strong>Ácido Salicílico</strong></td></tr>
+  <tr><td>Linhas finas e ruguinhas</td><td><strong>Retinol / Retinoide</strong></td></tr>
+  <tr><td>Brilho, luminosidade, prevenção de manchas</td><td><strong>Vitamina C</strong></td></tr>
+  <tr><td>Olheiras roxas e melasma vascular</td><td><strong>Ácido Tranexâmico</strong></td></tr>
+  <tr><td>Várias queixas ao mesmo tempo</td><td><strong>Niacinamida (B3)</strong></td></tr>
+  <tr><td>Manchas em pele sensível ou rosácea</td><td><strong>Ácido Kójico / Ácido Lático</strong></td></tr>
+</table>
+</div>
+
+<div class="page-block">
+<div class="secao-categoria">
+  <h2>PARTE 2 — Baratinhos de Farmácia</h2>
+  <span class="secao-subtitle">27 produtos brasileiros, de R$ 3 a R$ 90, organizados por área da pele</span>
+</div>
+
+<h2>Limpeza facial</h2>
+<p>Pra começar uma rotina, você precisa limpar bem. Esses 3 sabonetes cobrem todos os tipos de pele 50+.</p>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/01-sabonete-glicerinado-pom-pom.png" alt="Sabonete Glicerinado Pom Pom">
+    </div>
+    <div class="produto-titulo">
+      <h3>Sabonete Glicerinado Pom Pom (bebê)</h3>
+      <span class="preco">R$ 3 a R$ 8</span>
+      <span class="categoria-tag">limpeza facial</span>
+      <a href="https://s.shopee.com.br/AKXo1PoIHV" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Sabonete glicerinado infantil — suave, sem irritantes, com pH compatível com a pele do rosto.</p>
+    <p><span class="label-info">Pra quê serve:</span> Limpeza facial gentil pra qualquer tipo de pele. Especialmente bom pra pele sensível, sensibilizada por ácidos, ou em recuperação depois de algum tratamento.</p>
+    <p><span class="label-info">Como usar:</span> Lave o rosto duas vezes ao dia normalmente — de manhã e antes de dormir.</p>
+    <p><span class="label-info">Onde encontrar:</span> Supermercado ou farmácia, na seção de bebê.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/02-sabonete-enxofre-granado.png" alt="Sabonete de Enxofre Granado">
+    </div>
+    <div class="produto-titulo">
+      <h3>Sabonete de Enxofre Granado</h3>
+      <span class="preco">R$ 8 a R$ 15</span>
+      <span class="categoria-tag">tratamento</span>
+      <a href="https://s.shopee.com.br/3VhTtCNQJx" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Sabonete medicado com enxofre. É <strong>tratamento</strong>, não só limpeza.</p>
+    <p><span class="label-info">Pra quê serve:</span> Foliculite (espinhas pequenas no corpo), rosácea, espinhas no rosto, dermatite seborreica, queratose pilar (aquelas "bolinhas" no braço que parecem pele de morango), caspa pesada. Tem ação antibacteriana, antifúngica e desobstrui o poro.</p>
+    <p><span class="label-info">Como usar — no rosto:</span> 3 vezes por semana (por exemplo segunda, quarta e sexta), à noite. Deixe agir por 2-3 minutos antes de enxaguar. Hidrate depois.</p>
+    <p><span class="label-info">Como usar — no corpo (foliculite, queratose):</span> Diariamente no banho, por 2-3 minutos na área afetada. Hidratar o corpo depois.</p>
+    <p><span class="label-info">Cuidados:</span> Sempre hidratar depois de usar. Não usar em pele aberta ou irritada. Se você tem pele muito sensível, comece com 1 vez por semana e veja como reage.</p>
+    <p><span class="label-info">Onde encontrar:</span> Farmácia, supermercado, Mercado Livre.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/03-agua-micelar-garnier-vitaminac.png" alt="Água Micelar Garnier Vitamina C">
+    </div>
+    <div class="produto-titulo">
+      <h3>Água Micelar Clareadora Garnier (sem perfume)</h3>
+      <span class="preco">~R$ 40</span>
+      <span class="categoria-tag">limpeza facial</span>
+      <a href="https://s.shopee.com.br/2g8MuEQ079" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Água micelar com vitamina C. Remove maquiagem e trata o tom da pele ao mesmo tempo. Sem perfume.</p>
+    <p><span class="label-info">Pra quê serve:</span> Tira a maquiagem suavemente sem agredir. A vitamina C ajuda a uniformizar o tom. Ótima pra pele sensível.</p>
+    <p><span class="label-info">Como usar:</span> Aplique no algodão e passe sobre o rosto com toques suaves. Não precisa enxaguar. É a primeira etapa da limpeza dupla (depois você lava com sabonete).</p>
+    <p><span class="label-info">Rendimento:</span> Cerca de 6 meses de uso diário. Sai barata por mês.</p>
+    <p><span class="label-info">Onde encontrar:</span> Supermercado, farmácia, loja de cosméticos.</p>
+  </div>
+</div>
+</div>
+
+<div class="page-block">
+<h2>Hidratantes faciais</h2>
+<p>Hidratante bom não é caro. Esses 3 da farmácia brasileira competem com produtos importados de R$ 200.</p>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/04-garnier-hialuronico-toque-seco-versao-azul.png" alt="Garnier Hialurônico Toque Seco azul">
+    </div>
+    <div class="produto-titulo">
+      <h3>Garnier Hialurônico Toque Seco (versão azul)</h3>
+      <span class="preco">R$ 30 a R$ 45</span>
+      <span class="categoria-tag">hidratante facial</span>
+      <a href="https://s.shopee.com.br/40dkUvx8bd" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Hidratante facial com ácido hialurônico + aloe vera + niacinamida. Textura "toque seco", efeito de primer e blur logo na aplicação.</p>
+    <p><span class="label-info">Pra quê serve:</span> Hidrata profundamente sem deixar a pele melecada. O aloe vera dá uma sensação refrescante que acalma e ajuda a prevenir manchas e vermelhidão. A niacinamida clareia e uniformiza o tom ao longo do tempo.</p>
+    <p><span class="label-info">Ideal pra:</span> Pele mista e oleosa.</p>
+    <p><span class="label-info">Como usar:</span> Aplique no rosto limpo como último passo da hidratação (de manhã e/ou à noite). De manhã, sempre protetor solar por cima.</p>
+    <p><span class="label-info">Cuidados:</span> Existem 3 versões da linha (amarela, verde, azul). Essa é a <strong>azul</strong> — hialurônico toque seco. Não confunda com as outras.</p>
+    <p><span class="label-info">Onde encontrar:</span> Supermercado, farmácia, loja de cosméticos.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/05-garnier-hidratante-salicilico-antiacne-toque-seco.png" alt="Hidratante Garnier Salicílico Antiacne">
+    </div>
+    <div class="produto-titulo">
+      <h3>Hidratante Garnier Salicílico (85g)</h3>
+      <span class="preco">R$ 28 a R$ 50</span>
+      <span class="categoria-tag">hidratante + ativos</span>
+      <a href="https://s.shopee.com.br/7AamGrLytt" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Hidratante facial com niacinamida + ácido salicílico + ácido hialurônico + vitamina C — 4 ativos em 1 só produto.</p>
+    <p><span class="label-info">Pra quê serve:</span> Niacinamida clareia manchas. Ácido salicílico controla oleosidade, seca espinhas e desobstrói poros. Vitamina C dá luminosidade. Tem efeito blur na aplicação (deixa a pele com aspecto mais uniforme na hora).</p>
+    <p><span class="label-info">Como usar:</span> Aplique no rosto limpo como hidratante final, de manhã ou à noite. 85 gramas rendem muito.</p>
+    <p><span class="label-info">Cuidados:</span> Use protetor solar durante o dia, sem falta. Peles muito secas podem sentir um leve ressecamento — se for o seu caso, use só à noite.</p>
+    <p><span class="label-info">Onde encontrar:</span> Supermercado, farmácia, loja de cosméticos.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/06-hidratante-clareador-glycolic-bright-loreal-paris.png" alt="Hidratante Clareador Glycolic Bright L'Oreal Paris">
+    </div>
+    <div class="produto-titulo">
+      <h3>Hidratante Clareador Glycolic Bright — L'Oréal Paris</h3>
+      <span class="preco">~R$ 40</span>
+      <span class="categoria-tag">hidratante + clareador</span>
+      <a href="https://s.shopee.com.br/30lDJKubvI" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Hidratante corporal e facial clareador, com dois ativos clareadores e fator de proteção solar médio.</p>
+    <p><span class="label-info">Pra quê serve:</span> Hidrata e clareia ao mesmo tempo. Bom pra manchas de sol e melasma leve. Pode usar no rosto e no corpo.</p>
+    <p><span class="label-info">Como usar:</span> Aplique como hidratante normal depois da limpeza, no rosto e/ou corpo.</p>
+    <div class="destaque-aviso"><strong>Importante:</strong> esse fator de proteção médio <strong>NÃO substitui o protetor solar</strong>. É só complementar. Você precisa do filtro solar próprio por cima durante o dia.</div>
+    <p><span class="label-info">Onde encontrar:</span> Supermercado, farmácia, loja de cosméticos.</p>
+  </div>
+</div>
+</div>
+
+<div class="page-block">
+<h2>Ácidos e séruns (tratamento facial)</h2>
+<p>Esses são os produtos que <strong>tratam</strong> — clareiam manchas, controlam oleosidade, melhoram textura. Use com cautela e introduza um por vez.</p>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/07-solucao-acido-salicilico-creamy.png" alt="Solução Ácido Salicílico Creamy">
+    </div>
+    <div class="produto-titulo">
+      <h3>Solução Ácido Salicílico — Creamy (90 ml)</h3>
+      <span class="preco">R$ 35 a R$ 50</span>
+      <span class="categoria-tag">controle de oleosidade</span>
+      <a href="https://s.shopee.com.br/17bkSCHAt" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Solução líquida com ácido salicílico e tea tree (melaleuca).</p>
+    <p><span class="label-info">Pra quê serve:</span> Seca espinhas, controla a oleosidade, reduz poros dilatados.</p>
+    <p><span class="label-info">Como usar:</span> 4 a 5 gotinhas no rosto, espalhe bem. O frasco rende 4 a 5 meses de uso. Use com moderação — não exagere na quantidade.</p>
+    <p><span class="label-info">Cuidados:</span> Pode ressecar em excesso em pele seca ou sensível. Use protetor solar durante o tratamento. Não use em pele irritada.</p>
+    <p><span class="label-info">Onde encontrar:</span> Site da Creamy, farmácias online, Mercado Livre.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/08-solucao-acido-tranexamico-creamy.png" alt="Solução Ácido Tranexâmico Creamy">
+    </div>
+    <div class="produto-titulo">
+      <h3>Solução Ácido Tranexâmico — Creamy</h3>
+      <span class="preco">R$ 35 a R$ 55</span>
+      <span class="categoria-tag">clareador de manchas</span>
+      <a href="https://s.shopee.com.br/3B4dWRrNUM" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Solução clareadora com 4 ativos: ácido tranexâmico + ácido glicólico + niacinamida + alfa-arbutin.</p>
+    <p><span class="label-info">Pra quê serve:</span> Clarear manchas. Cada um dos 4 ativos age numa etapa diferente da produção do pigmento da pele — o tranexâmico bloqueia a transferência do pigmento, o alfa-arbutin reforça, o glicólico renova, e a niacinamida uniformiza.</p>
+    <p><span class="label-info">Como usar:</span> 4 a 6 gotinhas no rosto, espalhe bem. Rende muito. Comece em dias alternados, vai aumentando.</p>
+    <p><span class="label-info">Cuidados:</span> Protetor solar é obrigatório durante todo o tratamento. Introduza gradualmente.</p>
+    <p><span class="label-info">Onde encontrar:</span> Site da Creamy, farmácias online, Mercado Livre.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/09-mix-serum-principia-niacinamida-glicolico-salicilico.png" alt="Mix Sérum Principia">
+    </div>
+    <div class="produto-titulo">
+      <h3>Mix Sérum Principia (Niacinamida + Glicólico + Salicílico)</h3>
+      <span class="preco">R$ 30 a R$ 50</span>
+      <span class="categoria-tag">sérum facial</span>
+      <a href="https://s.shopee.com.br/1BJZ8tQxgG" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Sérum facial que combina niacinamida + ácido glicólico + ácido salicílico em uma só fórmula.</p>
+    <p><span class="label-info">Pra quê serve:</span> Niacinamida clareia, glicólico renova e melhora a textura, salicílico controla oleosidade e poros. Bom pra quem quer um produto que faz três coisas.</p>
+    <p><span class="label-info">Como usar:</span> Aplique no rosto limpo antes do hidratante. De manhã, protetor solar por cima é obrigatório.</p>
+    <p><span class="label-info">Cuidados:</span> Introduza gradualmente — comece com dias alternados.</p>
+    <p><span class="label-info">Onde encontrar:</span> Site da Principia, farmácias online, Mercado Livre.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/10-pasta-dagua-needs-ocoringa.png" alt="Pasta D Agua Needs">
+    </div>
+    <div class="produto-titulo">
+      <h3>Pasta D'Água Needs <em>(o coringa)</em></h3>
+      <span class="preco">~R$ 13</span>
+      <span class="categoria-tag">mil e uma utilidades</span>
+      <a href="https://s.shopee.com.br/W3sLqT71X" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Produto dermatológico com óxido de zinco. Multifuncional, acessível, vale cada centavo.</p>
+    <p><span class="label-info">Pra quê serve:</span> Prevenir e clarear manchas, acalmar rosácea, secar espinhas e foliculite, evitar assaduras, funcionar como base (primer) antes do protetor solar.</p>
+    <p><span class="label-info">Como usar — de manhã:</span> Camada fina antes do protetor solar. Use maquiagem ou filtro solar com cor por cima.</p>
+    <p><span class="label-info">Como usar — à noite:</span> Camada fina, espere 15 minutos, depois siga com ácidos ou hidratante.</p>
+    <p><span class="label-info">Como usar — pontual:</span> Aplique direto na área-alvo (espinha, foliculite, assadura). Pode usar diariamente, de preferência à noite.</p>
+    <p><span class="label-info">Frequência:</span> Rosto até 2 vezes ao dia. Corpo preferencialmente à noite.</p>
+    <p><span class="label-info">Onde encontrar:</span> Farmácia, supermercado, Mercado Livre.</p>
+  </div>
+</div>
+</div>
+
+<div class="page-block">
+<h2>Protetores solares</h2>
+<p>Filtro solar é o melhor clareador do mundo — porque previne novas manchas antes delas aparecerem. Sem ele, nenhum tratamento funciona. Esses 4 são os melhores custo-benefício.</p>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/11-filtro-solar-principia-ps1.png" alt="Filtro Solar Principia PS1">
+    </div>
+    <div class="produto-titulo">
+      <h3>Filtro Solar Principia PS1</h3>
+      <span class="preco">R$ 20 a R$ 35</span>
+      <span class="categoria-tag">protetor solar</span>
+      <a href="https://s.shopee.com.br/3B4dWzqUyH" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Protetor solar facial acessível, com niacinamida na fórmula.</p>
+    <p><span class="label-info">Pra quê serve:</span> Proteção solar diária + melhora da qualidade da pele com o uso contínuo (a niacinamida vai uniformizando o tom).</p>
+    <p><span class="label-info">Como usar:</span> Último passo da rotina da manhã. Reaplicar a cada 2 horas se ficar exposta ao sol.</p>
+    <p><span class="label-info">Onde encontrar:</span> Site da Principia, farmácias online, Mercado Livre.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/12-protetor-solar-needs-fluido.png" alt="Protetor Solar Needs Fluido">
+    </div>
+    <div class="produto-titulo">
+      <h3>Protetor Solar Needs Fluido</h3>
+      <span class="preco">~R$ 40</span>
+      <span class="categoria-tag">protetor solar</span>
+      <a href="https://s.shopee.com.br/5q5OpswK4Y" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Protetor solar facial em textura fluida. Sem deixar resíduo branco, e não arde os olhos.</p>
+    <p><span class="label-info">Pra quê serve:</span> Proteção solar diária com acabamento confortável. Bom pra quem usa ácidos.</p>
+    <p><span class="label-info">Como usar:</span> Último passo da rotina da manhã. Reaplicar a cada 2 horas se ficar exposta ao sol.</p>
+    <p><span class="label-info">Cuidados:</span> Obrigatório em qualquer rotina com ácidos.</p>
+    <p><span class="label-info">Onde encontrar:</span> Farmácias, Mercado Livre, lojas de cosméticos.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/13-filtro-solar-loreal-the-invisible.png" alt="Filtro Solar L Oreal The Invisible">
+    </div>
+    <div class="produto-titulo">
+      <h3>Filtro Solar L'Oréal The Invisible</h3>
+      <span class="preco">~R$ 45</span>
+      <span class="categoria-tag">protetor solar</span>
+      <a href="https://meli.la/1J9Tx7b" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Protetor solar facial fluido sem cor. Um dos 3 melhores filtros fluidos do mercado brasileiro.</p>
+    <p><span class="label-info">Pra quê serve:</span> Proteção solar com acabamento praticamente invisível. Não arde os olhos. Resistente a água, suor e areia (bom pra praia).</p>
+    <div class="destaque-aviso"><strong>Lembre-se:</strong> filtro solar é o melhor clareador do mundo — porque previne novas manchas. Quem usa filtro todo dia envelhece 30% mais devagar (estudo australiano de 2013).</div>
+    <p><span class="label-info">Onde encontrar:</span> Farmácias, supermercados, Mercado Livre.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/14-filtro-solar-umbrella-urban.png" alt="Filtro Solar Umbrella Urban">
+    </div>
+    <div class="produto-titulo">
+      <h3>Filtro Solar Umbrella Urban</h3>
+      <span class="preco">~R$ 87</span>
+      <span class="categoria-tag">protetor solar premium</span>
+      <a href="https://meli.la/2BiSDuA" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Protetor solar facial tecnológico sem cor. Tem proteção anti-poluição e anti-luz azul (computador, celular). Efeito matte real.</p>
+    <p><span class="label-info">Pra quê serve:</span> Proteção solar de alta qualidade, sem deixar a pele esbranquiçada. Acabamento aveludado, bom pra quem sofre com brilho.</p>
+    <p><span class="label-info">Como usar:</span> Último passo da rotina da manhã. Reaplicar a cada 2 horas se exposta.</p>
+    <p><span class="label-info">Onde encontrar:</span> Farmácias, Mercado Livre, lojas de cosméticos.</p>
+  </div>
+</div>
+</div>
+
+<div class="page-block">
+<h2>Pros olhos, lábios, unhas e coringas</h2>
+<p>A área do contorno dos olhos é a primeira que envelhece. Esses produtos resolvem pontos esquecidos: olheiras, unhas frágeis, e pele coringa que serve pra tudo.</p>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/15-hidratante-labial-nivea-com-manteiga-de-karite.png" alt="Hidratante Labial Nivea Karité">
+    </div>
+    <div class="produto-titulo">
+      <h3>Hidratante Labial Nivea com Manteiga de Karité <em>(uso pra olheiras)</em></h3>
+      <span class="preco">~R$ 20</span>
+      <span class="categoria-tag">olheiras + lábios</span>
+      <a href="https://s.shopee.com.br/6VL5drESP3" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Hidratante labial Nivea, na versão com <strong>manteiga de karité</strong>. Tem um uso fora do rótulo (off-label) que viralizou: aplicar ao redor dos olhos.</p>
+    <p><span class="label-info">Pra quê serve:</span> Tratar olheiras craqueladas (aquela pele "rachada" embaixo do olho de tanto ressecada) e amenizar linhas finas dos pés de galinha.</p>
+    <div class="destaque-aviso"><strong>ATENÇÃO — leia com cuidado:</strong> tem que ser a versão com manteiga de <strong>KARITÉ</strong>. A manteiga de <strong>CACAU NÃO funciona</strong> pra esse uso. Confira no rótulo antes de comprar.</div>
+    <p><span class="label-info">Como usar — ao redor dos olhos:</span> À noite, antes de dormir, aplique uma quantidade muito pequena ao redor dos olhos com o dedo anelar (o dedo mais delicado). Nunca dentro dos olhos.</p>
+    <p><span class="label-info">Como usar — nos lábios:</span> Como hidratante labial normal. <strong>Atenção:</strong> manteigas oleosas nos lábios durante o dia, expostas ao sol, podem ressecar e envelhecer a região mais rápido. De dia, prefira protetor labial com FPS. Esse Nivea com karité, só à noite.</p>
+    <p><span class="label-info">Onde encontrar:</span> Supermercado, farmácia.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/16-cera-nutritiva-granado-unhas-e-cuticulas.png" alt="Cera Nutritiva Granado">
+    </div>
+    <div class="produto-titulo">
+      <h3>Cera Nutritiva Granado — Unhas e Cutículas</h3>
+      <span class="preco">~R$ 24</span>
+      <span class="categoria-tag">unhas</span>
+      <a href="https://s.shopee.com.br/3B4dfsEiD7" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Cera hidratante nutritiva pra unhas e cutículas.</p>
+    <p><span class="label-info">Pra quê serve:</span> Hidrata cutículas, melhora unhas fracas ou que quebram fácil, resolve aquelas "pelinhas" chatas que aparecem ao redor da unha.</p>
+    <p><span class="label-info">Como usar:</span> Aplique nas cutículas e massageie com a ponta do dedo. Quando aparecer uma pelinha, NÃO PUXE — aplique a cera primeiro, ela amacia.</p>
+    <p><span class="label-info">Onde encontrar:</span> Farmácias, Mercado Livre, lojas Granado.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/17-vaselina-qualquer-marca-o-coringa-universal.png" alt="Vaselina">
+    </div>
+    <div class="produto-titulo">
+      <h3>Vaselina (qualquer marca) <em>— o coringa universal</em></h3>
+      <span class="preco">R$ 5 a R$ 15</span>
+      <span class="categoria-tag">multifuncional</span>
+      <a href="https://s.shopee.com.br/17buTTSpc" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Vaselina pura (petrolato). Forma uma camadinha sobre a pele que prende a hidratação dentro. <strong>NÃO causa câncer. NÃO causa espinha.</strong> Esses são mitos antigos que a ciência já desmentiu.</p>
+    <p><span class="label-info">Pra quê serve — várias coisas:</span></p>
+    <ul>
+      <li><strong>Pé rachado:</strong> aplique à noite generosamente, coloque meia por cima, durma. Com consistência, em algumas semanas o calcanhar melhora muito.</li>
+      <li><strong>Pés de galinha ao redor dos olhos:</strong> aplique uma camadinha muito fina antes de dormir.</li>
+      <li><strong>Canto da boca e nariz ressecados depois de usar ácidos:</strong> aplique direto.</li>
+      <li><strong>Selagem da cafeína</strong> no protocolo de olheiras (você vai ver na Parte 4).</li>
+      <li><strong>Tatuagens recentes:</strong> ajuda na cicatrização (com orientação do tatuador).</li>
+    </ul>
+    <p><span class="label-info">Pra quem é segura:</span> de recém-nascido a idosa. Hipoalergênica.</p>
+    <p><span class="label-info">Cuidados:</span> Não use no rosto inteiro como hidratante principal se você tem pele oleosa — pode pesar. Use só nas áreas-alvo, à noite.</p>
+    <p><span class="label-info">Onde encontrar:</span> Farmácia, supermercado, loja de conveniência.</p>
+  </div>
+</div>
+</div>
+
+<div class="page-block">
+<h2>Cabelo e couro cabeludo</h2>
+<p>4 produtos baratos de farmácia que fazem diferença real em cabelo. Pra mais opções naturais (vinagre, babosa, alecrim), veja o bônus "O Que Fazer Quando o Cabelo Começa a Cair".</p>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/18-oleo-johnsons-baby.png" alt="Oleo Johnson Baby">
+    </div>
+    <div class="produto-titulo">
+      <h3>Óleo Johnson's Baby</h3>
+      <span class="preco">R$ 10 a R$ 18</span>
+      <span class="categoria-tag">cabelo</span>
+      <a href="https://s.shopee.com.br/2qRnHluFub" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Óleo mineral clássico de bebê — multifuncional.</p>
+    <p><span class="label-info">Pra quê serve:</span> Hidratação e brilho capilar. Especialmente útil pra cabelos fragilizados, ressecados ou em recuperação depois de química (tintura, alisamento, descoloração).</p>
+    <p><span class="label-info">Como usar:</span> Aplique em cabelo úmido (não encharcado), distribua nas pontas e no comprimento. Não use diariamente — só como tratamento pontual.</p>
+    <p><span class="label-info">Cuidados:</span> Em cabelos oleosos, evite a raiz e o couro cabeludo.</p>
+    <p><span class="label-info">Onde encontrar:</span> Farmácia, supermercado, loja de R$ 1,99.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/19-shampoo-clear-embalagem-branca.png" alt="Shampoo Clear Branca">
+    </div>
+    <div class="produto-titulo">
+      <h3>Shampoo Clear — Embalagem BRANCA</h3>
+      <span class="preco">~R$ 23 (400 ml)</span>
+      <span class="categoria-tag">shampoo medicado</span>
+      <a href="https://s.shopee.com.br/6pxw3aL8Is" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Shampoo medicado pra caspa com hidratação real.</p>
+    <p><span class="label-info">Pra quê serve:</span> Caspa, dermatite seborreica (descamação amarelada no couro cabeludo), auxílio no controle da queda de cabelo. Serve tanto pra homem quanto pra mulher.</p>
+    <p><span class="label-info">Como usar:</span> Massageie bem o couro cabeludo. Deixe agir por alguns minutos antes de enxaguar. 2 a 3 vezes por semana. Nos outros dias, use shampoo normal.</p>
+    <div class="destaque-aviso"><strong>ATENÇÃO — não confunda as embalagens:</strong> a versão <strong>BRANCA</strong> é a com hidratação (que você quer). A versão <strong>azul</strong> é a masculina tradicional, e não tem o mesmo efeito.</div>
+    <p><span class="label-info">Onde encontrar:</span> Supermercado, farmácia.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/20-acidificante-elseve-glycolic-gloss.png" alt="Acidificante Elseve Glycolic Gloss">
+    </div>
+    <div class="produto-titulo">
+      <h3>Acidificante Elseve Glycolic Gloss</h3>
+      <span class="preco">~R$ 34</span>
+      <span class="categoria-tag">brilho capilar</span>
+      <a href="https://meli.la/2gZBb3b" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Acidificante capilar com ácido glicólico — um passo extra que se usa <strong>depois do shampoo e antes do condicionador</strong>.</p>
+    <p><span class="label-info">Pra quê serve:</span> Realinha as fibras do cabelo, fecha a capinha externa do fio (cutícula), e entrega brilho intenso. É o efeito "ponto de luz" que se faz em salão de cabelereiro.</p>
+    <p><span class="label-info">Como usar:</span> Aplique depois de enxaguar o shampoo, espere agir um pouco, enxágue. Continue com o condicionador normalmente.</p>
+    <p><span class="label-info">Cuidados:</span> Não substitui o condicionador — complementa.</p>
+    <p><span class="label-info">Onde encontrar:</span> Supermercado, farmácia, loja de cosméticos.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/21-oleo-capilar-amend-gold-black.png" alt="Óleo Capilar Amend Gold Black">
+    </div>
+    <div class="produto-titulo">
+      <h3>Óleo Capilar Amend Gold Black</h3>
+      <span class="preco">R$ 11 a R$ 20</span>
+      <span class="categoria-tag">finalizador</span>
+      <a href="https://s.shopee.com.br/6pxw4GYgo5" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Óleo de finalização capilar (à base de silicone).</p>
+    <p><span class="label-info">Pra quê serve:</span> Fecha a capinha externa do fio, reduz frizz, adiciona hidratação superficial e dá brilho.</p>
+    <p><span class="label-info">Como usar:</span> Aplique uma pequena quantidade nas pontas. Pode ser em cabelo úmido ou seco.</p>
+    <p><span class="label-info">Cuidados:</span> Não use todos os dias — silicone acumula no fio com o tempo. Faça remoção com um shampoo clarificante periodicamente (1 vez por mês).</p>
+    <p><span class="label-info">Onde encontrar:</span> Lojas de cosméticos populares, Mercado Livre, feiras.</p>
+  </div>
+</div>
+</div>
+
+<div class="page-block">
+<h2>Corpo — axila e clareamento de áreas escuras</h2>
+<p>Axila escura, virilha escurecida, cotovelo manchado. 4 produtos baratos pra clarear essas áreas de atrito com paciência. Veja também o <strong>Protocolo Chega de Axilas Escuras</strong> na Parte 4 desse guia.</p>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/22-hidratante-clareador-principia-emulsao-corporal-ec01.png" alt="Hidratante Clareador Principia EC1">
+    </div>
+    <div class="produto-titulo">
+      <h3>Hidratante Clareador Principia — Emulsão Corporal EC1</h3>
+      <span class="preco">R$ 25 a R$ 40</span>
+      <span class="categoria-tag">clareador corporal</span>
+      <a href="https://s.shopee.com.br/9fI7RihHPr" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Hidratante corporal com ácido lático em boa concentração.</p>
+    <p><span class="label-info">Pra quê serve:</span> Clarear e suavizar áreas de atrito: virilha, axila, cotovelos, joelhos, região íntima.</p>
+    <p><span class="label-info">Como usar:</span> Aplique nas áreas-alvo depois do banho, com a pele limpa e seca. Uso regular pra resultado progressivo.</p>
+    <p><span class="label-info">Cuidados:</span> O ácido lático pode causar leve sensibilidade em pele muito fina. Use protetor solar nas áreas expostas ao sol.</p>
+    <p><span class="label-info">Onde encontrar:</span> Site da Principia, farmácias online, Mercado Livre.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/23-hidratante-dove-corporal-com-niacinamida.png" alt="Hidratante Dove Corporal Niacinamida">
+    </div>
+    <div class="produto-titulo">
+      <h3>Hidratante Dove Corporal com Niacinamida</h3>
+      <span class="preco">R$ 20 a R$ 35</span>
+      <span class="categoria-tag">hidratante corporal</span>
+      <a href="https://s.shopee.com.br/9ALqqt47nP" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Hidratante corporal com niacinamida. Textura cremosa, não pegajosa, absorção rápida.</p>
+    <p><span class="label-info">Pra quê serve:</span> Clarear axila escurecida e uniformizar o tom geral da pele do corpo. Boa alternativa pra quem não se adapta a desodorante aerossol ou roll-on (que pode irritar).</p>
+    <p><span class="label-info">Como usar:</span> Aplique depois do banho, com a pele seca e limpa. Uso regular pra resultado progressivo.</p>
+    <p><span class="label-info">Cuidados:</span> Seguro pra uso diário. Pra manter o resultado, precisa de uso contínuo.</p>
+    <p><span class="label-info">Onde encontrar:</span> Supermercado, farmácia, loja de cosméticos.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/24-desodorante-creme-dove-com-niacinamida.png" alt="Desodorante Creme Dove Niacinamida">
+    </div>
+    <div class="produto-titulo">
+      <h3>Desodorante Creme Dove com Niacinamida</h3>
+      <span class="preco">~R$ 17</span>
+      <span class="categoria-tag">desodorante clareador</span>
+      <a href="https://s.shopee.com.br/5VSYUFbvv1" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Desodorante em formato creme, com niacinamida na fórmula.</p>
+    <p><span class="label-info">Pra quê serve:</span> Proteção contra odor + clareamento progressivo da axila. O formato creme reduz o atrito na hora de aplicar (o aerossol com álcool contribui pra escurecer a axila com o tempo).</p>
+    <p><span class="label-info">Como usar:</span> Aplique na axila limpa e seca depois do banho.</p>
+    <p><span class="label-info">Cuidados:</span> Não substitui antitranspirante em quem sua muito.</p>
+    <p><span class="label-info">Onde encontrar:</span> Supermercado, farmácia, loja de cosméticos.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/25-desodorante-rexona-clinical.png" alt="Desodorante Rexona Clinical">
+    </div>
+    <div class="produto-titulo">
+      <h3>Desodorante Rexona Clinical</h3>
+      <span class="preco">~R$ 27</span>
+      <span class="categoria-tag">antitranspirante clareador</span>
+      <a href="https://s.shopee.com.br/7KuCfurrVn" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Desodorante antitranspirante de uso clínico, com ativos clareadores — 2 em 1.</p>
+    <p><span class="label-info">Pra quê serve:</span> Proteção intensa contra suor e odor, com clareamento progressivo da axila ao longo do uso.</p>
+    <p><span class="label-info">Como usar:</span> Aplique na axila limpa e seca depois do banho.</p>
+    <p><span class="label-info">Cuidados:</span> Aguarde 24 horas depois da depilação antes de aplicar.</p>
+    <p><span class="label-info">Onde encontrar:</span> Supermercado, farmácia.</p>
+  </div>
+</div>
+</div>
+
+<div class="page-block">
+<h2>Corpo — dermatite, odor e ingredientes especiais</h2>
+<p>Pra problemas mais específicos do corpo: bactérias que causam mau cheiro, e ingredientes que potencializam outros produtos.</p>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/26-sabonete-antiseptico-soapex.png" alt="Sabonete Antisseptico Soapex">
+    </div>
+    <div class="produto-titulo">
+      <h3>Sabonete Antisséptico Soapex</h3>
+      <span class="preco">~R$ 39</span>
+      <span class="categoria-tag">antibacteriano</span>
+      <a href="https://s.shopee.com.br/1gFpvatkuI" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Sabonete bactericida potente — um tratamento antimicrobiano de verdade, não apenas sabonete comum.</p>
+    <p><span class="label-info">Pra quê serve:</span> Eliminar as bactérias causadoras de mau cheiro corporal forte e chulé (bromidrose).</p>
+    <p><span class="label-info">Como usar:</span> Use APENAS nas áreas-alvo (axila, pés, virilha) — <strong>NÃO no corpo todo</strong>.</p>
+    <p><span class="label-info">Cuidados:</span> Como mata bactérias, também mata as bactérias boas da sua pele. Por isso o uso é localizado e pontual, não diário no corpo todo. Hidrate depois de usar.</p>
+    <p><span class="label-info">Onde encontrar:</span> Farmácia, Mercado Livre.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/27-glicerina-bidestilada-pura.png" alt="Glicerina Bidestilada Pura">
+    </div>
+    <div class="produto-titulo">
+      <h3>Glicerina Bidestilada Pura</h3>
+      <span class="preco">~R$ 13 (100 ml)</span>
+      <span class="categoria-tag">ingrediente</span>
+      <a href="https://s.shopee.com.br/8pj0TP3AhT" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Glicerina pura — um ingrediente que puxa água pra dentro da pele e do fio do cabelo. Está presente em quase todos os hidratantes de marca cara.</p>
+    <p><span class="label-info">Pra quê serve — cabelo:</span> Melhora frizz, adiciona brilho e maciez quando misturada num creme ou leave-in.</p>
+    <p><span class="label-info">Pra quê serve — rosto e corpo:</span> Hidratação extra quando misturada em outro hidratante ou sérum.</p>
+    <p><span class="label-info">Como usar — cabelo:</span> Misture 10 a 20 ml de glicerina em 100 ml do seu leave-in ou máscara capilar.</p>
+    <p><span class="label-info">Como usar — rosto/corpo:</span> Misture algumas gotas com o seu hidratante ou sérum habitual.</p>
+    <div class="destaque-aviso"><strong>NUNCA aplique pura.</strong> Glicerina pura, em ambiente muito seco, pode ter efeito reverso (puxa a água da sua pele em vez de levar pra dentro). Sempre diluída em outro produto.</div>
+    <p><span class="label-info">Onde encontrar:</span> Farmácia de manipulação, loja de cosméticos, Mercado Livre.</p>
+  </div>
+</div>
+</div>
+
+<div class="page-block">
+<div class="secao-categoria">
+  <h2>PARTE 3 — K-Beauty Coreano</h2>
+  <span class="secao-subtitle">11 produtos coreanos que valem a pena — ranking do mais essencial pro mais especializado</span>
+</div>
+
+<div class="aviso" style="margin: 2em 0 2.5em;">
+  <h2>Antes de comprar K-Beauty</h2>
+  <p><strong>Produtos coreanos são os mais falsificados do mundo.</strong> O Retinal Shot (o primeiro da lista) é o mais copiado.</p>
+  <p>Esses produtos podem ser comprados pela internet. Abaixo de cada um eu deixei os links que eu recomendo e que <strong>não são falsificados</strong>. O mercado de beleza coreana é o que mais sofre com falsificações no Brasil — fique atenta a preços muito abaixo do normal e a vendedores sem selo de "oficial".</p>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/28-celimax-retinal-shot-1-lugar-do-ranking.png" alt="Celimax Retinal Shot">
+    </div>
+    <div class="produto-titulo">
+      <h3>Celimax Retinal Shot <em>— 1º lugar do ranking</em></h3>
+      <span class="preco">K-Beauty</span>
+      <span class="categoria-tag">anti-idade</span>
+      <a href="https://s.shopee.com.br/4Va1Jlcbeg" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Sérum (shot) com retinal a 0,1% — o dobro da concentração máxima permitida no Brasil em cosmético (0,05%). Tem ativos calmantes integrados (niacinamida, glicerina, peptídeo Matrixyl) que reduzem a irritação típica dos retinoides.</p>
+    <p><span class="label-info">Por que é diferente dos remédios:</span> Ácidos de tratamento dermatológico (como Vitacid, Vitanol) causam vasinhos, sensibilidade severa e exigem prescrição médica. O Retinal Shot tem potência alta sem essas irritações fortes, porque a fórmula é equilibrada com ativos calmantes.</p>
+    <p><span class="label-info">Pra quê serve:</span> Prevenir e melhorar linhas finas e rugas. Estimular a produção de colágeno (com a ajuda do peptídeo Matrixyl, que é como um "mensageiro" que avisa a célula pra produzir mais colágeno). Melhorar a qualidade geral da pele.</p>
+    <p><span class="label-info">Tempo pra ver resultado:</span> 30 a 60 dias (4 a 8 semanas) pra maioria. Peles muito danificadas podem levar até 90 dias. Constância é fundamental — uso aleatório não funciona.</p>
+    <p><span class="label-info">Pode usar ao redor dos olhos?</span> Sim, mas com protocolo: primeiro use no rosto por 2 a 3 semanas sem sensibilidade. Depois aplique uma quantidade menor que um grão de areia abaixo do olho. Se não houver sensibilidade, aplique na pálpebra superior. Sempre teste antes.</p>
+    <p><span class="label-info">Hidratante antes?</span> Não é obrigatório, mas é recomendado. Passe um hidratante espesso (sem perfume e sem corante) à noite, espere 15 minutos, depois aplique o retinal. Pele mais hidratada tem barreira mais forte e tolera melhor o ácido.</p>
+    <p><span class="label-info">Quantidade correta:</span> Rosto inteiro = tamanho de uma ervilha grande. Uso pontual (testa, ao redor dos olhos, bigode chinês) = quantidade bem menor. Não exagere — mais produto não significa mais resultado.</p>
+    <div class="destaque-aviso"><strong>A duplinha de ouro:</strong> MANHÃ Celimax Pore + Dark Spot (ervilha grande) + NOITE Retinal Shot (ervilha). Essa combinação resolve cerca de 90% das queixas comuns: manchas, ruguinhas, poros, oleosidade, espinhas.</div>
+    <p><span class="label-info">Cuidados:</span> Introduza gradualmente — dias alternados no início. Protetor solar de manhã é obrigatório. Não combine com outros ácidos fortes na mesma rotina.</p>
+    <p><span class="label-info">Onde encontrar:</span> Loja oficial verificada na internet. <strong>É o produto mais falsificado do K-Beauty — comprar apenas em fonte oficial.</strong></p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/29-celimax-pore-plus-dark-spot.png" alt="Celimax Pore + Dark Spot">
+    </div>
+    <div class="produto-titulo">
+      <h3>Celimax Pore + Dark Spot <em>— a dupla do Retinal Shot</em></h3>
+      <span class="preco">~R$ 60</span>
+      <span class="categoria-tag">clareador + hidratante</span>
+      <a href="https://s.shopee.com.br/9zuxuxrfZV" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Creme clareador <strong>e</strong> hidratante da Celimax — age em duas frentes ao mesmo tempo: clareia as manchas que já existem E evita que novas manchas se formem (bloqueia a produção de pigmento na raiz).</p>
+    <p><span class="label-info">A sacada genial:</span> é clareador <strong>e</strong> hidratante em um só produto. Você pula a etapa de aplicar hidratante separado — as ceramidas da fórmula protegem a barreira da pele enquanto os outros ativos vão clareando.</p>
+    <p><span class="label-info">Os 4 ativos:</span></p>
+    <ul>
+      <li><strong>Niacinamida</strong> — inibe a produção de melanina, uniformiza o tom da pele.</li>
+      <li><strong>Ácido Tranexâmico</strong> — trata melasma vascular e manchinhas com causa de vasinhos.</li>
+      <li><strong>Ceramidas</strong> — fortalece a barreira da pele, hidrata enquanto clareia.</li>
+      <li><strong>Melazero™</strong> — complexo patenteado que potencializa e acelera o clareamento.</li>
+    </ul>
+    <p><span class="label-info">Pra quê serve:</span> Melasma, manchas de acne, manchas de sol, manchas de envelhecimento. Pode usar no rosto <strong>e</strong> no corpo.</p>
+    <p><span class="label-info">Frequência:</span> MANHÃ e NOITE — pode usar duas vezes ao dia. Usar duas vezes potencializa muito os resultados.</p>
+    <div class="destaque-aviso"><strong>A duplinha de ouro:</strong> MANHÃ Pore + Dark Spot (ervilha grande) + NOITE Retinal Shot (ervilha). Essa combinação resolve cerca de 90% das queixas comuns: manchas, ruguinhas, poros, oleosidade, espinhas.</div>
+    <p><span class="label-info">Como usar:</span> Aplique no rosto limpo, manhã e noite, na quantidade de uma ervilha grande. De manhã, sempre seguido de protetor solar.</p>
+    <p><span class="label-info">Cuidados:</span> Protetor solar é obrigatório após a aplicação. Compre apenas em loja oficial verificada — esse produto é muito falsificado.</p>
+    <p><span class="label-info">Onde encontrar:</span> Loja oficial verificada na internet.</p>
+  </div>
+</div>
+</div>
+
+<div class="page-block">
+<h2>K-Beauty — Hidratação e recuperação da pele</h2>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/30-pdrn-essence-vtcosmetics-2-lugar.png" alt="VT Cosmetics PDRN Essence">
+    </div>
+    <div class="produto-titulo">
+      <h3>PDRN Essence — VT Cosmetics <em>— 2º lugar</em></h3>
+      <span class="preco">K-Beauty</span>
+      <span class="categoria-tag">hidratação + glow</span>
+      <a href="https://s.shopee.com.br/40dkjCqNuh" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Essência com PDRN, um ativo usado em clínicas pra cicatrização depois de procedimentos estéticos. Textura leitosa.</p>
+    <p><span class="label-info">Pra quê serve:</span> Hidratação profunda, recuperação da barreira da pele, dar viço e brilho saudável.</p>
+    <p><span class="label-info">Quando faz mais diferença:</span> Logo depois de procedimentos como laser de CO2 (com orientação médica), pra ajudar na recuperação.</p>
+    <p><span class="label-info">Onde encontrar:</span> Loja oficial verificada na internet.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/31-purcell-pixel-biome-creme-4-lugar.png" alt="Purcell Pixel Biome Creme">
+    </div>
+    <div class="produto-titulo">
+      <h3>Purcell Pixel Biome Creme <em>— 4º lugar</em></h3>
+      <span class="preco">K-Beauty</span>
+      <span class="categoria-tag">creme hidratante rico</span>
+      <a href="https://s.shopee.com.br/3B4djozxT4" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Creme hidratante de textura densa que hidrata intensamente sem pesar na pele. Os usuários descrevem como "um carinho de anjo no rosto".</p>
+    <p><span class="label-info">Ideal pra:</span> Pele seca, sensível, ou em recuperação depois de algum procedimento.</p>
+    <p><span class="label-info">Onde encontrar:</span> Loja oficial verificada na internet.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/32-anua-heartleaf-centella-5-lugar.png" alt="Anua Heartleaf Centella">
+    </div>
+    <div class="produto-titulo">
+      <h3>Anua Heartleaf + Centella <em>— 5º lugar</em></h3>
+      <span class="preco">K-Beauty</span>
+      <span class="categoria-tag">acalmante</span>
+      <a href="https://meli.la/299hUpV" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Creme calmante com heartleaf e centella asiática. Sensação de pomada cicatrizante.</p>
+    <p><span class="label-info">Pra quê serve:</span> Acalmar rosácea, vermelhidão e pele irritada.</p>
+    <div class="destaque-aviso"><strong>Disponibilidade:</strong> esse produto às vezes é difícil de achar em loja online no Brasil — em alguns casos é necessário importar diretamente da Coreia.</div>
+    <p><span class="label-info">Onde encontrar:</span> Loja oficial verificada ou importação direta da Coreia.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/33-skinfood-carrot-water-toner-pad-6-lugar.png" alt="Skinfood Carrot Water Toner Pad">
+    </div>
+    <div class="produto-titulo">
+      <h3>Skinfood Carrot Water Toner Pad <em>— 6º lugar</em></h3>
+      <span class="preco">K-Beauty</span>
+      <span class="categoria-tag">tônico</span>
+      <a href="https://s.shopee.com.br/2qRnLsAn0N" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Almofadas tônicas com extrato de cenoura.</p>
+    <p><span class="label-info">Pra quê serve:</span> Acalmar e tonificar a pele. Tem cheiro natural calmante.</p>
+    <p><span class="label-info">Onde encontrar:</span> Loja oficial verificada na internet.</p>
+  </div>
+</div>
+</div>
+
+<div class="page-block">
+<h2>K-Beauty — Limpeza, clareamento e proteção solar</h2>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/34-anua-heartleaf-bha-gel-de-limpeza-7-lugar.png" alt="Anua Heartleaf BHA Gel de Limpeza">
+    </div>
+    <div class="produto-titulo">
+      <h3>Anua Heartleaf + BHA — Gel de Limpeza <em>— 7º lugar</em></h3>
+      <span class="preco">K-Beauty</span>
+      <span class="categoria-tag">limpeza facial</span>
+      <a href="https://s.shopee.com.br/6feVv2ennN" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Gel de limpeza facial com heartleaf e BHA (um tipo de ácido salicílico).</p>
+    <p><span class="label-info">Pra quê serve:</span> Limpeza suave que ainda melhora a textura da pele. O BHA desobstrói poros durante o banho.</p>
+    <p><span class="label-info">Onde encontrar:</span> Loja oficial verificada na internet.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/35-numbuzin-glutathione-vitamin-dark-spot-8-lugar.png" alt="Numbuzin Glutathione">
+    </div>
+    <div class="produto-titulo">
+      <h3>Numbuzin Glutathione Vitamin Dark Spot <em>— 8º lugar</em></h3>
+      <span class="preco">K-Beauty premium</span>
+      <span class="categoria-tag">clareador tecnológico</span>
+      <a href="https://s.shopee.com.br/4Va1L7Tpuu" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Clareador tecnológico com vitamina C e glutationa (um ativo clareador que viralizou no mercado coreano).</p>
+    <p><span class="label-info">Observação:</span> É o produto mais caro dessa lista — por isso ficou em 8º apesar da alta qualidade. Vale a pena se você já tentou outros clareadores e não funcionaram.</p>
+    <p><span class="label-info">Onde encontrar:</span> Loja oficial verificada na internet.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/36-hyalu-cica-water-fit-sun-serum-9-lugar.png" alt="Hyalu CICA Sun Serum Skin 1004">
+    </div>
+    <div class="produto-titulo">
+      <h3>Hyalu-Cica — Skin 1004 <em>— 9º lugar</em></h3>
+      <span class="preco">K-Beauty</span>
+      <span class="categoria-tag">protetor solar</span>
+      <a href="https://s.shopee.com.br/9pbXhkoWim" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Protetor solar fluido com ácido hialurônico e centella asiática.</p>
+    <p><span class="label-info">Pra quê serve:</span> Proteção solar com hidratação no mesmo passo. Não arde os olhos.</p>
+    <p><span class="label-info">Onde encontrar:</span> Loja oficial verificada na internet.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/37-mattifying-sun-stick-celimax-3-lugar.png" alt="Mattifying Sun Stick Celimax">
+    </div>
+    <div class="produto-titulo">
+      <h3>Mattifying Sun Stick — Celimax <em>— 3º lugar</em></h3>
+      <span class="preco">K-Beauty</span>
+      <span class="categoria-tag">protetor solar em bastão</span>
+      <a href="https://s.shopee.com.br/2VowyY9Zry" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Protetor solar em bastão, prático pra reaplicação ao longo do dia. Tem efeito matte real — não deixa a pele esticada e nem oleosa.</p>
+    <p><span class="label-info">Como usar:</span> Deslize suavemente sobre o rosto a cada 2 horas de exposição solar. Não precisa abrir o produto, espalhar com a mão e tudo mais — fica prático pra carregar na bolsa.</p>
+    <p><span class="label-info">Onde encontrar:</span> Loja oficial verificada na internet.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/38-pdrn-ha-liposome-iope-10-lugar.png" alt="IOPE PDRN H.A. Liposome">
+    </div>
+    <div class="produto-titulo">
+      <h3>PDRN H.A. Liposome — IOPE <em>— 10º lugar</em></h3>
+      <span class="preco">K-Beauty</span>
+      <span class="categoria-tag">recuperação</span>
+      <a href="https://s.shopee.com.br/3LO3yCpyTI" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Creme/essência com PDRN + ácido hialurônico em lipossomas (pequenas cápsulas que entregam o ativo mais fundo na pele).</p>
+    <p><span class="label-info">Pra quê serve:</span> Cicatrização acelerada e recuperação depois de procedimentos estéticos.</p>
+    <p><span class="label-info">Onde encontrar:</span> Loja oficial verificada na internet.</p>
+  </div>
+</div>
+</div>
+
+<div class="page-block">
+<div class="secao-categoria">
+  <h2>PARTE 4 — Os Protocolos Coreanos</h2>
+  <span class="secao-subtitle">4 protocolos práticos pra problemas específicos — mãos, olheiras, axilas, pescoço</span>
+</div>
+
+<p>Agora que você conhece os produtos, vou te mostrar como <strong>combinar eles em protocolos</strong> pra problemas específicos que a mulher 50+ mais sofre. São 4 protocolos, cada um com passo a passo claro, o que comprar e o que esperar.</p>
+
+<p>São esses:</p>
+<ul>
+  <li><strong>Protocolo Mãos de Fada</strong> — pra mãos manchadas, ressecadas, com cara de idade</li>
+  <li><strong>Protocolo Xô Olheiras</strong> — cada tipo de olheira tem solução diferente, e a "misturinha de milhões" pra olheira marrom</li>
+  <li><strong>Protocolo Chega de Axilas Escuras</strong> — axila, virilha e região íntima clareadas com 4 passos</li>
+  <li><strong>Protocolo Tchau Pescoço de Frango</strong> — pra firmar o pescoço e o colo, áreas que entregam a idade</li>
+</ul>
+</div>
+
+<div class="page-block">
+<div class="secao-categoria">
+  <h2>Protocolo Mãos de Fada</h2>
+  <span class="secao-subtitle">3 passos simples pra mãos mais jovens, hidratadas e sem manchas</span>
+</div>
+
+<div class="aviso">
+  <h2>Aviso honesto antes de começar</h2>
+  <p>A pele das mãos é uma área difícil. Muitas mulheres, especialmente acima dos 50, podem precisar de <strong>procedimentos estéticos</strong> (com dermatologista) pra resultados mais expressivos.</p>
+  <p>Com cuidado em casa, você vai melhorar muito a qualidade, a hidratação e clarear manchinhas — mas <strong>não espere milagre instantâneo</strong>. A consistência é o que faz a diferença. Faça o protocolo todos os dias e, com o tempo, sua mão vai mostrar resultado real.</p>
+</div>
+
+<h2>Por que as mãos envelhecem tão rápido</h2>
+
+<table>
+  <tr><th>Causa</th><th>O que acontece</th></tr>
+  <tr><td><strong>Falta de hidratação</strong></td><td>Pele craquelada, com aspecto de pergaminho e sem viço</td></tr>
+  <tr><td><strong>Manchas solares</strong></td><td>Manchas escuras causadas por anos de exposição solar nas mãos</td></tr>
+  <tr><td><strong>Perda de colágeno</strong></td><td>Pele mais fina, menos firme, aspecto envelhecido</td></tr>
+  <tr><td><strong>Descuido na rotina</strong></td><td>Mãos raramente recebem o mesmo cuidado que o rosto — e entregam a idade</td></tr>
+</table>
+
+<h2>O Protocolo — 3 passos</h2>
+
+<div class="passo-card">
+  <span class="passo-num">PASSO 1 — Manhã</span>
+  <h3>Vitamina C</h3>
+  <p><strong>O que é:</strong> antioxidante poderoso — impede o envelhecimento precoce e ajuda a tratar as manchas solares.</p>
+  <p><strong>Por que nas mãos:</strong> as manchas das mãos são, em grande parte, dano solar acumulado ao longo dos anos. A vitamina C começa a tratar esse dano e ainda protege contra novos.</p>
+  <p><strong>Como aplicar:</strong> tamanho de meia ervilha em cada mão. Espalhe bem por toda a superfície — costas, dedos e punhos.</p>
+  <p><strong>Concentração indicada:</strong> entre 10% e 20% pra resultado efetivo.</p>
+  <p><strong>Exemplos de produtos:</strong> Vitamina C da Principia (VC-10), Vitamina C da Garnier, Vitamina C da L'Oréal. Qualquer vitamina C estável de marca conhecida — atente-se à concentração.</p>
+</div>
+
+<div class="passo-card">
+  <span class="passo-num">PASSO 2 — Manhã, logo depois da Vitamina C</span>
+  <h3>Hidratante Clareador</h3>
+  <p><strong>Por que é o pulo do gato:</strong> a maioria das queixas das mãos vem de dois problemas combinados — desidratação e manchas. Um hidratante clareador resolve os dois ao mesmo tempo.</p>
+  <p><strong>O que ele faz:</strong></p>
+  <ul>
+    <li>Melhora a firmeza e o viço da pele (turgor).</li>
+    <li>A niacinamida ou outros clareadores clareiam as manchas progressivamente.</li>
+  </ul>
+  <p><strong>Como aplicar:</strong> tamanho de meia ervilha em cada mão. Aplique por cima da vitamina C — ele sela os ativos na pele.</p>
+  <p><strong>Exemplos de produtos:</strong></p>
+  <ul>
+    <li>Hidratante Garnier Salicílico (vitamina C + niacinamida)</li>
+    <li>L'Oréal Glycolic Bright (clareador + fator de proteção solar médio)</li>
+    <li>Hidratante Principia CH1 (niacinamida)</li>
+  </ul>
+  <div class="destaque-aviso"><strong>Obrigatório:</strong> termine SEMPRE com filtro solar por cima das mãos. Sem ele, nada do que você fez de manhã funciona direito — o sol desfaz o trabalho dos clareadores.</div>
+</div>
+
+<div class="passo-card">
+  <span class="passo-num">PASSO 3 — Noite</span>
+  <h3>Ácido Glicólico</h3>
+  <p><strong>Por que não é retinol nas mãos:</strong> pra mãos, o ácido glicólico é mais indicado que o retinol. Ele age em várias queixas ao mesmo tempo, com mais eficiência nessa região específica.</p>
+  <p><strong>O que ele faz nas mãos:</strong></p>
+  <ul>
+    <li>Renova as células da superfície (uma esfoliação química suave).</li>
+    <li>Clareia manchas e manchas solares.</li>
+    <li>Melhora a textura — diminui o aspecto craquelado.</li>
+    <li>Devolve o viço e a luminosidade.</li>
+  </ul>
+  <p><strong>Concentração correta:</strong> entre 9,7% e 10% — essa é a porcentagem ideal pra mão. Menos que isso tem pouco efeito. Mais que isso pode irritar.</p>
+  <p><strong>Como aplicar:</strong> aplique nas mãos à noite, depois da limpeza. Espalhe bem pelas costas das mãos, dedos e punhos. Deixe absorver — não enxágue.</p>
+  <p><strong>Cuidados:</strong></p>
+  <ul>
+    <li>Filtro solar de manhã é OBRIGATÓRIO quando se usa qualquer ácido.</li>
+    <li>Introduza gradualmente — comece com 2 a 3 vezes por semana.</li>
+    <li>Hidrate depois do ácido se a pele ressecar.</li>
+  </ul>
+</div>
+
+<h2>Resumo do Protocolo</h2>
+
+<table>
+  <tr><th>Período</th><th>Passo</th><th>Ativo</th><th>Quantidade</th></tr>
+  <tr><td><strong>Manhã</strong></td><td>1º — Vitamina C</td><td>Vitamina C 10 a 20%</td><td>Meia ervilha em cada mão</td></tr>
+  <tr><td><strong>Manhã</strong></td><td>2º — Hidratante Clareador</td><td>Niacinamida + clareadores</td><td>Meia ervilha em cada mão</td></tr>
+  <tr><td><strong>Manhã</strong></td><td>3º — Protetor Solar</td><td>FPS 30 mínimo</td><td>Cobrir todo o dorso das mãos</td></tr>
+  <tr><td><strong>Noite</strong></td><td>Ácido Glicólico</td><td>9,7 a 10%</td><td>Cobrir todo o dorso das mãos</td></tr>
+</table>
+
+<div class="dica-verde">
+  <h4>Dica extra que quase ninguém menciona</h4>
+  <p>Depois de aplicar a vitamina C com o hidratante clareador de manhã, use <strong>luvas de silicone ou plástico</strong> por 5 a 10 minutos.</p>
+  <p>Essa cobertura potencializa a absorção dos ativos — a umidade e o calor das mãos forçam a pele a absorver mais.</p>
+  <p>Ainda melhor: faça isso antes de dormir, com o hidratante da noite. Você acorda com as mãos suaves e nutridas.</p>
+</div>
+</div>
+
+<div class="page-block">
+<div class="secao-categoria">
+  <h2>Protocolo Xô Olheiras</h2>
+  <span class="secao-subtitle">Cada tipo de olheira tem solução diferente — e a "misturinha de milhões" pra olheira marrom</span>
+</div>
+
+<h2>Primeiro: entenda o tipo da sua olheira</h2>
+
+<p>A maioria das mulheres tenta tratar olheira com um creme genérico e fica frustrada quando não funciona. <strong>O motivo é simples:</strong> existem 4 tipos diferentes de olheira, e cada um precisa de um tratamento próprio.</p>
+
+<p>Antes de comprar qualquer produto, identifique o tipo da sua olheira:</p>
+
+<div class="tipo-olheira">
+  <h4>Olheira Vascular (roxa ou azulada)</h4>
+  <p><strong>Como identifica:</strong> a cor é roxa ou azulada. Piora quando você está cansada, com rinite, sinusite, ou quando o tempo está frio.</p>
+  <p><strong>Melhor abordagem:</strong> Hirudoid pomada, ácido tranexâmico, vitamina K.</p>
+</div>
+
+<div class="tipo-olheira">
+  <h4>Olheira Pigmentar (marrom ou escura)</h4>
+  <p><strong>Como identifica:</strong> a cor é marrom ou escura, parecendo uma mancha na pele.</p>
+  <p><strong>Melhor abordagem:</strong> cafeína, ácido tranexâmico, niacinamida, retinol. <strong>É essa que a "misturinha de milhões" trata</strong> (você vai ver a seguir).</p>
+</div>
+
+<div class="tipo-olheira">
+  <h4>Olheira Estrutural (fundinha)</h4>
+  <p><strong>Como identifica:</strong> a olheira é fundinha — a sombra vem da perda de volume ósseo ou de gordura na região.</p>
+  <p><strong>Melhor abordagem:</strong> preenchimento com ácido hialurônico feito por profissional habilitado. <strong>Creme não resolve.</strong></p>
+</div>
+
+<div class="tipo-olheira">
+  <h4>Bolsas / Inchaço</h4>
+  <p><strong>Como identifica:</strong> inchaço abaixo do olho, costuma piorar de manhã.</p>
+  <p><strong>Melhor abordagem:</strong> drenagem linfática, cafeína, compressas geladas. <strong>O efeito é temporário</strong> — não tem cura permanente sem procedimento estético.</p>
+</div>
+
+<div class="tipo-olheira">
+  <h4>Olheira Mista</h4>
+  <p><strong>Como identifica:</strong> combinação de dois ou mais tipos acima.</p>
+  <p><strong>Melhor abordagem:</strong> tratar cada causa separadamente.</p>
+</div>
+
+<div class="aviso">
+  <h2>Aviso honesto — quando creme não resolve</h2>
+  <p>Se a sua olheira é <strong>estrutural</strong> — fundinha, causada por perda de massa óssea ou de gordura na região — <strong>não existe creme no mundo que vai devolver o volume perdido</strong>.</p>
+  <p>Nesses casos, o tratamento indicado é <strong>preenchimento com ácido hialurônico</strong> feito por dermatologista ou cirurgião. Isso não é falha sua — é fisiologia. Saber o tipo da sua olheira é o primeiro passo pra não gastar dinheiro à toa.</p>
+</div>
+</div>
+
+<div class="page-block">
+<h2>Cremes pra área dos olhos — os melhores</h2>
+
+<p>Esses são os cremes mais indicados pra área dos olhos, organizados do mais barato pro mais sofisticado:</p>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/17-vaselina-qualquer-marca-o-coringa-universal.png" alt="Vaselina">
+    </div>
+    <div class="produto-titulo">
+      <h3>Vaselina <em>— skincare democrático</em></h3>
+      <span class="preco">R$ 5 a R$ 15</span>
+      <span class="categoria-tag">multifuncional</span>
+      <a href="https://s.shopee.com.br/17buTTSpc" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">Por que é a primeira?</span> Skincare democrático — pra todos os bolsos. Multifuncional e muito subestimada.</p>
+    <p><span class="label-info">Pra quê serve nos olhos:</span></p>
+    <ul>
+      <li>Hidrata profundamente a área dos olhos.</li>
+      <li>Melhora linhas finas e pele craquelada na região.</li>
+      <li>Diminui o atrito — ajuda a clarear levemente.</li>
+      <li>Otimiza a maquiagem (corretivo desliza melhor).</li>
+    </ul>
+    <p><span class="label-info">Quanto aplicar:</span> uma camadinha bem FINA — quase translúcida. Excesso fica brilhante e pode entrar no olho.</p>
+    <p><span class="label-info">Onde aplicar:</span> ao redor dos olhos (canto externo, pés de galinha, osso embaixo). Evite a pálpebra móvel próxima aos cílios.</p>
+    <p><span class="label-info">Como aplicar:</span> com o dedo anelar, em leves batidinhas. À noite, antes de dormir.</p>
+    <p><span class="label-info">Frequência:</span> todas as noites, sem problema. É um dos produtos mais seguros que existem.</p>
+
+    <div class="destaque-aviso"><strong>Bônus secreto — "Selar a cafeína" (LEIA COM ATENÇÃO):</strong>
+      <p>"Selar a cafeína" <strong>NÃO tem nada a ver com o café que você bebe</strong>. JAMAIS passe café líquido, borra de café ou qualquer coisa parecida ao redor dos olhos — isso pode causar irritação séria.</p>
+      <p>A "cafeína" aqui é o <strong>ATIVO COSMÉTICO</strong> presente em séruns e cremes pra olheiras — por exemplo, o Mix-02 da Principia (cafeína + ácido tranexâmico) listado nessa mesma página, ou outros cremes de olheira com cafeína na fórmula.</p>
+      <p><strong>Como fazer a selagem corretamente:</strong></p>
+      <ol style="margin-top:0.5em;">
+        <li>Aplique o sérum ou creme COM CAFEÍNA ao redor dos olhos primeiro.</li>
+        <li>Espere de 2 a 3 minutos pra ele absorver na pele.</li>
+        <li>Passe uma camadinha FINA de vaselina por cima.</li>
+        <li>A vaselina cria uma "tampa" que evita que o ativo evapore — o resultado fica multiplicado durante o sono.</li>
+      </ol>
+      <p>Você vê esse passo a passo no protocolo da <strong>"Misturinha de Milhões"</strong> mais adiante nessa Parte 4.</p>
+    </div>
+
+    <p><span class="label-info">Onde encontrar:</span> Farmácia, supermercado, loja de conveniência.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/39-retinol-popo.png" alt="Retinol Pòpo">
+    </div>
+    <div class="produto-titulo">
+      <h3>Retinol Pòpo <em>— nacional, oftalmologicamente testado</em></h3>
+      <span class="preco">R$ 40 a R$ 80</span>
+      <span class="categoria-tag">retinol pra olhos</span>
+      <a href="https://amzn.to/4voq8H7" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">Por que é especial:</span> esse é oftalmologicamente testado — tem estudo pra uso na área dos olhos e no rosto inteiro. A maioria dos retinóis brasileiros <strong>não tem</strong> esse estudo. Esse tem. E é nacional.</p>
+    <p><span class="label-info">O que faz:</span></p>
+    <ul>
+      <li>Estimula a produção de colágeno.</li>
+      <li>Melhora linhas finas e pés de galinha.</li>
+      <li>Melhora a textura e o viço ao redor dos olhos.</li>
+    </ul>
+    <p><span class="label-info">Pra quem:</span> quem quer tratar linhas de expressão ao redor dos olhos com segurança.</p>
+    <p><span class="label-info">Quanto aplicar:</span> 2 a 3 gotinhas — uma pra cada lado, dividindo em pequenos pontos.</p>
+    <p><span class="label-info">Onde aplicar:</span> ao redor dos olhos — no osso embaixo, no canto externo (pés de galinha) e na têmpora. <strong>Evite a pálpebra móvel próxima aos cílios.</strong></p>
+    <p><span class="label-info">Como aplicar:</span> com o dedo anelar (é o mais delicado), em leves batidinhas até absorver. Não esfregue, não puxe a pele.</p>
+    <p><span class="label-info">Frequência:</span> SÓ À NOITE. Comece com 2 a 3 vezes por semana nas primeiras 3 semanas. Depois pode passar pra 4 ou 5 vezes na semana. Não use todos os dias logo no início.</p>
+    <p><span class="label-info">Tempo pra absorver:</span> 5 a 10 minutos. Espere antes de deitar pra não passar tudo no travesseiro.</p>
+    <div class="destaque-aviso"><strong>Cuidados importantes:</strong> retinol deixa a pele mais sensível ao sol. <strong>Filtro solar de manhã é obrigatório.</strong> Se a pele ressecar muito, passe creme hidratante por cima depois que o retinol absorver. <strong>Não combine</strong> com outros ácidos fortes (glicólico, salicílico, tranexâmico) na mesma noite — alterne os dias. Evite em gravidez e amamentação.</div>
+    <p><span class="label-info">Onde encontrar:</span> Farmácias online, Mercado Livre.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/40-isdin-k-ox-eyes.png" alt="ISDIN K-Ox Eyes">
+    </div>
+    <div class="produto-titulo">
+      <h3>ISDIN K-Ox Eyes <em>— o único com vitamina K</em></h3>
+      <span class="preco">R$ 150+</span>
+      <span class="categoria-tag">olheiras vasculares</span>
+      <a href="https://meli.la/22Zr66v" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">Diferencial único:</span> é um dos únicos produtos do mercado brasileiro com <strong>vitamina K</strong> na fórmula — um ativo que ajuda na circulação e na drenagem da região dos olhos.</p>
+    <p><span class="label-info">O que faz:</span></p>
+    <ul>
+      <li>Vitamina K melhora a circulação e reduz a aparência das olheiras vasculares.</li>
+      <li>Tem um complexo de ativos específicos pra área dos olhos.</li>
+    </ul>
+    <p><span class="label-info">Pra quem:</span> olheiras vasculares (roxas ou azuladas) e pra quem pode investir mais.</p>
+    <p><span class="label-info">Quanto aplicar:</span> meia ervilha por olho. É concentrado — não exagere.</p>
+    <p><span class="label-info">Onde aplicar:</span> ao redor dos olhos, sobre a olheira (osso embaixo, canto interno e externo). Evite a pálpebra superior próxima aos cílios.</p>
+    <p><span class="label-info">Como aplicar:</span> com o dedo anelar em batidinhas suaves, do canto interno em direção ao externo. Sem esfregar.</p>
+    <p><span class="label-info">Frequência:</span> manhã E noite, todos os dias. <strong>Constância é o que faz o resultado.</strong></p>
+    <p><span class="label-info">Tempo pra absorver:</span> 3 a 5 minutos.</p>
+    <p><span class="label-info">Quando ver resultado:</span> 30 a 60 dias de uso contínuo. Olheiras vasculares clareiam progressivamente.</p>
+    <p><span class="label-info">Cuidados importantes:</span> de manhã, pode usar protetor solar por cima depois que absorver. À noite, é o ÚLTIMO passo antes de dormir (depois dele, nada).</p>
+    <p><span class="label-info">Onde encontrar:</span> Farmácia ou loja online.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/41-mix-02-principia-cafeina-plus-acido-tranexamico.png" alt="Mix-02 Principia">
+    </div>
+    <div class="produto-titulo">
+      <h3>Mix-02 — Principia <em>(cafeína + ácido tranexâmico)</em></h3>
+      <span class="preco">R$ 50 a R$ 80</span>
+      <span class="categoria-tag">2 em 1 pra olheiras</span>
+      <a href="https://s.shopee.com.br/8V6AHQIkP6" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">Os ativos:</span> Cafeína + Ácido Tranexâmico.</p>
+    <p><span class="label-info">O que faz:</span></p>
+    <ul>
+      <li><strong>Cafeína</strong> — drena o líquido acumulado, melhora bolsas e olheiras vasculares.</li>
+      <li><strong>Ácido tranexâmico</strong> — clareia olheiras pigmentares e vasculares.</li>
+    </ul>
+    <p>Age nos dois tipos mais comuns de olheira ao mesmo tempo.</p>
+    <p><span class="label-info">Pra quem:</span> olheiras vasculares E olheiras com manchinha — é um ótimo custo-benefício.</p>
+    <p><span class="label-info">Quanto aplicar:</span> 2 a 3 gotinhas — uma pra cada olho, dividindo em 3 a 4 pequenos pontos ao redor do olho.</p>
+    <p><span class="label-info">Onde aplicar:</span> ao redor dos olhos — osso embaixo do olho, têmpora e canto externo. <strong>Evite a linha dos cílios e a pálpebra móvel.</strong></p>
+    <p><span class="label-info">Como aplicar:</span> com o dedo anelar, em batidinhas suaves do canto interno em direção ao externo. Não esfregue.</p>
+    <p><span class="label-info">Frequência:</span> manhã E noite, todos os dias.</p>
+    <p><span class="label-info">Tempo pra absorver:</span> 3 a 5 minutos. Espere antes de aplicar outros produtos por cima.</p>
+    <div class="destaque-aviso"><strong>Esse é o produto principal da "Misturinha de Milhões":</strong> aplica o Mix-02 primeiro, faz a drenagem com rolinho, e sela com uma camadinha de vaselina. Você vê o passo a passo completo logo adiante.</div>
+    <p><span class="label-info">Cuidados importantes:</span> use filtro solar de manhã (o ácido tranexâmico fica mais eficiente com proteção). Pode ser combinado com hidratante depois de absorver.</p>
+    <p><span class="label-info">Onde encontrar:</span> Site da Principia, farmácias online, Mercado Livre.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/42-lifting-eye-cream-vt.png" alt="Lifting Eye Cream VT">
+    </div>
+    <div class="produto-titulo">
+      <h3>Lifting Eye Cream — VT <em>(K-Beauty)</em></h3>
+      <span class="preco">K-Beauty</span>
+      <span class="categoria-tag">drenagem automática</span>
+      <a href="https://s.shopee.com.br/4AxB7d8BSL" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">Diferencial:</span> tem um aplicador com vibração que já faz a drenagem da região dos olhos enquanto você aplica.</p>
+    <p><span class="label-info">O que faz:</span> creme pra área dos olhos com ação de firmeza e drenagem. A drenagem fica automatizada pelo aplicador.</p>
+    <p><span class="label-info">Pra quem:</span> quem pode investir mais e quer praticidade na hora da drenagem.</p>
+    <p><span class="label-info">Quanto aplicar:</span> uma gotinha por olho — o aplicador na ponta do tubo dispensa a quantidade certa automaticamente.</p>
+    <p><span class="label-info">Onde aplicar:</span> ao redor dos olhos — pálpebra inferior, canto externo (pés de galinha), têmpora. <strong>Evite a pálpebra móvel próxima aos cílios.</strong></p>
+    <p><span class="label-info">Como aplicar:</span> deslize o aplicador vibratório devagar, do canto interno em direção ao externo. A vibração já faz a drenagem — você não precisa esfregar.</p>
+    <p><span class="label-info">Frequência:</span> manhã E noite, pode usar todo dia.</p>
+    <p><span class="label-info">Tempo de aplicação:</span> 30 segundos a 1 minuto pra cada olho com o aplicador.</p>
+    <p><span class="label-info">Cuidados importantes:</span> não use no rosto inteiro — é específico pra área dos olhos. <strong>Sobre falsificações:</strong> o aplicador legítimo tem ergonomia e vibração diferenciadas. Compre APENAS em loja oficial.</p>
+    <p><span class="label-info">Onde encontrar:</span> Loja oficial verificada na internet — atenção pra falsificações.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/43-revive-eye-beauty-of-joseon-k-beauty.png" alt="Revive Eye Beauty of Joseon">
+    </div>
+    <div class="produto-titulo">
+      <h3>Revive Eye — Beauty of Joseon <em>(K-Beauty)</em></h3>
+      <span class="preco">K-Beauty</span>
+      <span class="categoria-tag">retinal pros olhos</span>
+      <a href="https://s.shopee.com.br/7fX3I9Nda9" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">Diferencial:</span> contém retinal liberado especificamente pra uso na área dos olhos — algo raro no mercado.</p>
+    <p><span class="label-info">O que faz:</span> o retinal estimula colágeno e melhora linhas finas. Tem ação renovadora e anti-envelhecimento ao redor dos olhos.</p>
+    <p><span class="label-info">Pra quem:</span> quem quer o poder do retinal especificamente na área dos olhos.</p>
+    <p><span class="label-info">Quanto aplicar:</span> meia ervilha — uma quantidade pequena pra cada olho.</p>
+    <p><span class="label-info">Onde aplicar:</span> ao redor dos olhos, especialmente no canto externo (pés de galinha) e na pálpebra superior. Esse é um dos poucos com retinal liberado pra pálpebra superior — mas <strong>evite a linha dos cílios</strong>.</p>
+    <p><span class="label-info">Como aplicar:</span> com o dedo anelar em leves batidinhas até absorver. Não esfregue.</p>
+    <p><span class="label-info">Frequência:</span> SÓ À NOITE. Comece com 3 vezes por semana e aumente gradualmente. Não use de manhã.</p>
+    <p><span class="label-info">Tempo pra absorver:</span> 5 a 10 minutos. Espere antes de deitar pra não passar tudo no travesseiro.</p>
+    <div class="destaque-aviso"><strong>Cuidados importantes:</strong> retinal aumenta a sensibilidade ao sol — <strong>filtro solar de manhã é obrigatório</strong>. Se a pálpebra ficar avermelhada ou ardida, pause por 3 dias e volte com menos frequência. Evite em gravidez e amamentação.</div>
+    <p><span class="label-info">Onde encontrar:</span> Loja oficial verificada na internet — atenção pra falsificações.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/44-hirudoid-pomada.png" alt="Hirudoid Pomada">
+    </div>
+    <div class="produto-titulo">
+      <h3>Hirudoid Pomada <em>(uso fora do rótulo, pra olheiras vasculares)</em></h3>
+      <span class="preco">R$ 30 a R$ 60</span>
+      <span class="categoria-tag">olheiras roxas</span>
+      <span class="link-em-breve">Encontrada em qualquer farmácia</span>
+    </div>
+  </div>
+  <div class="produto-info">
+    <div class="destaque-aviso"><strong>ATENÇÃO:</strong> tem que ser a <strong>POMADA</strong> — não o gel. O gel não funciona pra essa finalidade. É um uso <strong>fora do rótulo (off-label)</strong> indicado por dermatologistas — não é o uso original do produto.</div>
+    <p><span class="label-info">Pra quê serve:</span> olheiras vasculares (roxinhas) — especialmente em quem tem rinite ou sinusite. É o melhor pra a corzinha roxa/arroxeada específica.</p>
+    <p><span class="label-info">Quanto aplicar:</span> uma quantidade BEM PEQUENA — do tamanho de meio grão de arroz pra cada olho. Mais que isso não acelera nada e pode escorrer.</p>
+    <p><span class="label-info">Onde aplicar:</span> <strong>APENAS AO REDOR DOS OLHOS</strong> — no osso embaixo do olho (na área entre a olheira roxa e a maçã do rosto). <strong>JAMAIS dentro dos olhos, na pálpebra móvel próxima aos cílios, nem na linha dos cílios.</strong> Se sobrar excesso, NUNCA esfregue em direção ao olho — sempre afaste do olho.</p>
+    <p><span class="label-info">Como aplicar:</span> com o <strong>dedo anelar</strong> (é o mais fraco, faz menos pressão). Faça leves batidinhas até a pomada absorver — sem esfregar, sem puxar.</p>
+    <p><span class="label-info">Quanto tempo deixar:</span> a pomada absorve sozinha em 5 a 10 minutos. <strong>Não precisa enxaguar.</strong> Se você sentir excesso oleoso depois de 10 minutos, retire suavemente com um algodão SECO (não molhado) tocando levemente — sem esfregar.</p>
+    <p><span class="label-info">Frequência:</span> 1 vez ao dia, à NOITE, antes de dormir. Não use de manhã (a pomada brilha na luz do dia).</p>
+    <div class="destaque-aviso"><strong>Cuidados muito importantes:</strong>
+      <ul style="margin-top:0.5em;">
+        <li><strong>Lave bem as mãos</strong> antes E depois da aplicação.</li>
+        <li>Se você usa lentes de contato, <strong>tire as lentes ANTES</strong> de aplicar. Só recoloque na manhã seguinte, depois da limpeza do rosto.</li>
+        <li>Se a pomada entrar no olho por acidente, lave imediatamente com bastante água corrente. Pode arder por alguns minutos — passa.</li>
+        <li><strong>Não use por mais de 2 meses seguidos sem pausa.</strong> Faça 2 meses de uso + 1 a 2 semanas de pausa, depois recomeça.</li>
+        <li>Não use durante gravidez ou amamentação sem conversar com o médico antes.</li>
+        <li>Se aparecer vermelhidão, coceira ou inchaço, suspenda o uso e procure um médico.</li>
+      </ul>
+    </div>
+    <p><span class="label-info">Onde encontrar:</span> Farmácia (pode pedir no balcão — venda livre).</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/45-creme-area-dos-olhos-bisyou.png" alt="Creme Área dos Olhos Bisyou">
+    </div>
+    <div class="produto-titulo">
+      <h3>Creme Área dos Olhos — Bisyou</h3>
+      <span class="preco">R$ 50+</span>
+      <span class="categoria-tag">clareador + cor</span>
+      <a href="https://meli.la/1C31cyM" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">Diferencial:</span> tem uma corzinha — disfarça a olheira visualmente enquanto trata.</p>
+    <p><span class="label-info">O que faz:</span> clareador + cobertura de cor discreta. A ação é mais focada no clareamento do que nas linhas finas.</p>
+    <p><span class="label-info">Quanto aplicar:</span> meia ervilha por olho. Pode regular pra mais cobertura ou menos cobertura, dependendo do quanto quer disfarçar.</p>
+    <p><span class="label-info">Onde aplicar:</span> ao redor dos olhos, especialmente sobre a olheira. A corzinha se mistura com a pele e disfarça enquanto trata.</p>
+    <p><span class="label-info">Como aplicar:</span> com o dedo anelar em leves batidinhas. Esfumar bem pra a cor mesclar uniformemente com a pele do rosto.</p>
+    <p><span class="label-info">Frequência:</span> manhã e noite, todos os dias. De manhã funciona quase como uma "base" pra a área dos olhos.</p>
+    <p><span class="label-info">Tempo pra absorver:</span> 2 a 3 minutos.</p>
+    <p><span class="label-info">Cuidados importantes:</span> pode usar protetor solar por cima. Se for sair em foto importante, deixa um pouco mais de tempo pra a cor mesclar com a pele.</p>
+    <p><span class="label-info">Onde encontrar:</span> Loja online da marca, Mercado Livre.</p>
+  </div>
+</div>
+
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/46-baume-nutritivo-noviole.png" alt="Baume Nutritivo Noviole">
+    </div>
+    <div class="produto-titulo">
+      <h3>Baume Nutritivo — Noviole</h3>
+      <span class="preco">R$ 80+</span>
+      <span class="categoria-tag">nutrição + linhas finas</span>
+      <a href="https://amzn.to/4dQ2RGK" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que faz:</span> bom pra linhas finas ao redor dos olhos. Ajuda em olheiras com corzinha discreta.</p>
+    <p><span class="label-info">Pra quem:</span> quem busca uma opção nacional acessível focada em linhas finas e hidratação.</p>
+    <p><span class="label-info">Quanto aplicar:</span> 2 a 3 gotinhas — uma pra cada olho.</p>
+    <p><span class="label-info">Onde aplicar:</span> ao redor dos olhos — osso embaixo e canto externo (pés de galinha).</p>
+    <p><span class="label-info">Como aplicar:</span> com o dedo anelar em batidinhas suaves até absorver. Sem esfregar.</p>
+    <p><span class="label-info">Frequência:</span> manhã e noite, todos os dias.</p>
+    <p><span class="label-info">Tempo pra absorver:</span> 3 a 5 minutos.</p>
+    <p><span class="label-info">Cuidados importantes:</span> bom pra quem tem pele sensível na área dos olhos. Hidratação leve, sem ressecar. Pode usar protetor solar por cima de manhã.</p>
+    <p><span class="label-info">Onde encontrar:</span> Loja online da marca, Mercado Livre.</p>
+  </div>
+</div>
+
+<h2>A Misturinha de Milhões — pra olheira marrom + bolsas</h2>
+
+<p>Esse é o <strong>protocolo de 3 passos</strong> mais famoso pra olheira marrom (pigmentar) com bolsas. Simples, barato e com evidência por trás.</p>
+
+<div class="aviso" style="margin: 1em 0 2em;">
+  <h2>Atenção antes de começar a Misturinha</h2>
+  <p>Quando falamos em "cafeína" aqui, estamos falando do <strong>ATIVO COSMÉTICO</strong> que está em séruns e cremes pra olheiras. <strong>JAMAIS</strong> passe café líquido, borra de café ou pó de café ao redor dos olhos — pode causar irritação séria, mancha e até queimadura.</p>
+  <p>O produto que você vai usar nesse passo é um sérum/creme industrial com cafeína na fórmula — por exemplo, o <strong>Mix-02 da Principia</strong> (cafeína + ácido tranexâmico), que já foi apresentado nessa Parte 4.</p>
+</div>
+
+<div class="passo-card">
+  <span class="passo-num">PASSO 1 — Ativo Clareador (Cafeína)</span>
+  <h3>Aplicar o sérum com cafeína</h3>
+  <p><strong>O que usar:</strong> um sérum ou creme com cafeína na fórmula — o Mix-02 da Principia é o mais indicado (cafeína + ácido tranexâmico, ataca olheira marrom E vascular ao mesmo tempo).</p>
+  <p><strong>Quanto aplicar:</strong> 1 a 2 gotinhas em cada lado — uma gota dividida em 3-4 pequenos pontinhos ao redor do olho.</p>
+  <p><strong>Onde aplicar:</strong> ao redor dos olhos, no osso embaixo do olho, no canto externo (pés de galinha) e na têmpora. <strong>Evite a linha dos cílios e a pálpebra móvel próxima ao olho.</strong></p>
+  <p><strong>Como aplicar:</strong> com o <strong>dedo anelar</strong> (é o mais delicado — faz menos pressão, e a pele da região é a mais fina do rosto). Faça leves batidinhas, sem esfregar, sem puxar.</p>
+  <p><strong>Tempo de absorção:</strong> espere de 2 a 3 minutos antes de passar pro PASSO 2. O sérum precisa entrar na pele.</p>
+  <p><strong>O que faz:</strong></p>
+  <ul>
+    <li>A cafeína drena o líquido acumulado e melhora as bolsas.</li>
+    <li>Também trata as olheiras marrons (que são por aumento de pigmento na pele).</li>
+  </ul>
+</div>
+
+<div class="passo-card">
+  <span class="passo-num">PASSO 2 — Drenagem</span>
+  <h3>Drenagem com Rolinho</h3>
+  <p><strong>O que usar:</strong> rolinho facial de jade, quartzo rosa ou metal (vende em farmácia, Mercado Livre ou Shopee, custo R$ 10-30).</p>
+  <p><strong>Como fazer:</strong> deslize o rolinho devagar com pressão LEVE ao redor dos olhos, SEMPRE do canto interno (perto do nariz) em direção ao externo (perto da têmpora). <strong>Nunca volte o movimento</strong> — sempre na mesma direção, do nariz pra fora. Repita 6 a 10 vezes em cada olho.</p>
+  <p><strong>Duração:</strong> 1 a 2 minutos no total (cerca de 30 segundos a 1 minuto por olho).</p>
+  <p><strong>Atenção à direção:</strong> a direção certa é a direção do sistema linfático natural — do nariz pra fora. Movimentar ao contrário empurra o líquido pro lugar errado e pode INCHAR ainda mais.</p>
+  <p><strong>O que faz:</strong></p>
+  <ul>
+    <li>Melhora a circulação local.</li>
+    <li>Ajuda a desinchar a região e empurra o líquido linfático na direção correta.</li>
+    <li>Potencializa a absorção do ativo aplicado no PASSO 1.</li>
+  </ul>
+  <div class="destaque-aviso"><strong>Atenção — efeito Cinderela:</strong> a melhora das bolsas é <strong>temporária</strong>. Depois de algumas horas elas podem voltar. Bolsas são um problema mais estrutural — a drenagem alivia, não cura permanentemente. A constância (todo dia) é o que mantém o efeito visível.</div>
+</div>
+
+<div class="passo-card">
+  <span class="passo-num">PASSO 3 — Selagem</span>
+  <h3>Selagem com Vaselina</h3>
+  <p><strong>O que usar:</strong> vaselina simples de farmácia (a sólida em pote pequeno, qualquer marca).</p>
+  <p><strong>Quanto aplicar:</strong> uma camadinha FININHA — quase translúcida. Mais que isso fica brilhante demais e pode entrar nos olhos.</p>
+  <p><strong>Onde aplicar:</strong> POR CIMA da área onde você aplicou o sérum no PASSO 1 — ao redor dos olhos, mantendo distância do olho em si.</p>
+  <p><strong>Como aplicar:</strong> com o dedo anelar, em leves batidinhas. Não esfregue.</p>
+  <p><strong>Por que funciona:</strong> a vaselina forma uma barreira que impede a evaporação dos ativos do PASSO 1. Isso <strong>multiplica a absorção da cafeína</strong> durante a noite — a pele recebe o ativo por muito mais tempo.</p>
+  <p><strong>O que NÃO usar:</strong> NÃO use café, borra de café, óleo de cozinha, óleo de bebê nem nenhum produto improvisado. Só vaselina pura.</p>
+  <p><strong>Frequência da Misturinha completa:</strong> 1 vez ao dia, à NOITE, antes de dormir. Pode fazer todos os dias.</p>
+  <p><strong>De manhã:</strong> lave o rosto normalmente com água morna — a vaselina sai com facilidade.</p>
+  <p><strong>Resultado esperado:</strong> em 30 a 60 dias de uso consistente, a olheira marrom clareia progressivamente e as bolsas matinais reduzem.</p>
+  <p><strong>Custo total do protocolo:</strong> R$ 5-10 (vaselina) + custo do sérum de cafeína (R$ 50-80 o Mix-02) + R$ 10-30 (rolinho — compra uma vez, dura anos). Um dos protocolos mais acessíveis pra olheiras.</p>
+</div>
+
+<h2>Resumo rápido — qual protocolo pra cada tipo de olheira</h2>
+
+<table>
+  <tr><th>Tipo</th><th>Protocolo</th></tr>
+  <tr><td><strong>Olheira marrom</strong> (pigmentar)</td><td>Misturinha de Milhões: cafeína (Mix-02) + drenagem + vaselina</td></tr>
+  <tr><td><strong>Olheira roxa</strong> (vascular)</td><td>Hirudoid pomada + Mix-02 + ISDIN K-Ox</td></tr>
+  <tr><td><strong>Olheira estrutural</strong> (fundinha)</td><td>Preenchimento com profissional — creme não resolve</td></tr>
+  <tr><td><strong>Bolsas</strong></td><td>Drenagem linfática + cafeína (efeito temporário)</td></tr>
+  <tr><td><strong>Olheira mista</strong></td><td>Combinar os ativos adequados pra cada tipo presente</td></tr>
+</table>
+</div>
+
+<div class="page-block">
+<div class="secao-categoria">
+  <h2>Protocolo Chega de Axilas Escuras</h2>
+  <span class="secao-subtitle">4 passos pra clarear axila, virilha e região íntima</span>
+</div>
+
+<div class="dica-verde">
+  <h4>Nota importante antes de começar</h4>
+  <p>O clareamento é uma <strong>escolha pessoal</strong>. Essas áreas têm a cor que têm por razões naturais — atrito, predisposição genética, hormônios.</p>
+  <p>Esse protocolo é pra quem <strong>se incomoda</strong> e quer tratar. Não há obrigação de clarear nada. Quem não se incomoda não precisa fazer nada — e isso é tão válido quanto qualquer protocolo.</p>
+</div>
+
+<h2>Por que essas áreas escurecem</h2>
+
+<table>
+  <tr><th>Causa</th><th>O que acontece</th></tr>
+  <tr><td><strong>Atrito constante</strong></td><td>O roçar da pele em movimento estimula a produção de melanina — a pele escurece como reação de defesa</td></tr>
+  <tr><td><strong>Desodorante aerossol</strong></td><td>O álcool e os resíduos do aerossol irritam e escurecem a região da axila com o uso contínuo</td></tr>
+  <tr><td><strong>Resíduo de desodorante</strong></td><td>A camada acumulada bloqueia a entrada dos ativos clareadores na pele</td></tr>
+  <tr><td><strong>Falta de hidratação</strong></td><td>Pele desidratada nas áreas de atrito fica mais escura e com textura irregular</td></tr>
+  <tr><td><strong>Limpeza inadequada</strong></td><td>Sem limpeza profunda, os resíduos acumulados bloqueiam qualquer tratamento</td></tr>
+</table>
+
+<h2>O Protocolo Completo — 4 passos</h2>
+
+<div class="passo-card">
+  <span class="passo-num">PASSO 1 — Sempre</span>
+  <h3>Limpeza profunda da área</h3>
+  <p><strong>Por que é essencial:</strong> o clareador não penetra em pele suja ou com resíduo de desodorante. <strong>Sem esse passo, nada funciona.</strong></p>
+  <p><strong>Como limpar a axila:</strong></p>
+  <ul>
+    <li>Use sabonete comum normalmente no banho diário.</li>
+    <li>Uma vez por semana: use um <strong>óleo de limpeza (cleansing oil)</strong> pra remover os resíduos acumulados do desodorante. Aplica, massageia, enxágua bem.</li>
+  </ul>
+  <p><strong>Como limpar a virilha e a região íntima:</strong></p>
+  <ul>
+    <li>Óleo de limpeza é indicado também, com cuidado e sem exagero — a região tem microbiota delicada.</li>
+  </ul>
+  <div class="destaque-aviso"><strong>Sobre o desodorante:</strong> evite desodorante aerossol — o álcool irrita e escurece a axila com o tempo. Prefira desodorante creme ou roll-on, que causam menos irritação e atrito.</div>
+</div>
+
+<div class="passo-card">
+  <span class="passo-num">PASSO 2 — Sempre, depois da limpeza</span>
+  <h3>Hidratação da área</h3>
+  <p><strong>Por que hidratar antes do clareador:</strong> pele bem hidratada tem barreira mais forte e absorve melhor os ativos clareadores. Muito do escurecimento das axilas e virilhas vem do atrito em pele desidratada.</p>
+  <p><strong>O que usar:</strong> hidratante corporal leve — pode ser o mesmo que você já usa no corpo.</p>
+  <p><strong>Opcional:</strong> hidratante com niacinamida pra potencializar o clareamento já nessa etapa (como o Dove Niacinamida que está na Parte 2 desse guia).</p>
+  <p><strong>Como aplicar:</strong> aplique na área limpa e seca. Massageie suavemente até absorver.</p>
+</div>
+
+<div class="passo-card">
+  <span class="passo-num">PASSO 3 — Manhã e noite</span>
+  <h3>Clareador Dérmico</h3>
+  <p><strong>Produto indicado:</strong> Clareador Dérmico Cicatribem — combina <strong>6 ativos clareadores</strong> numa só fórmula hidratante.</p>
+  <p><strong>Os 6 ativos clareadores:</strong></p>
+  <ul>
+    <li><strong>Ácido Glicólico</strong> — renova as células da superfície.</li>
+    <li><strong>Niacinamida</strong> — inibe a produção de melanina.</li>
+    <li><strong>Ácido Kójico</strong> — clareador tradicional asiático.</li>
+    <li><strong>Ácido Fítico</strong> — clareador suave e antioxidante.</li>
+    <li><strong>Lumin White</strong> — complexo patenteado clareador.</li>
+    <li><strong>Revinage</strong> — ativo de renovação e viço.</li>
+  </ul>
+  <p><strong>Por que tem parafina e glicerina na fórmula:</strong> pra hidratar enquanto clareia. Como o escurecimento vem do atrito (e atrito vem de pele desidratada), o produto trata a <strong>causa</strong> (hidratação) e o <strong>sintoma</strong> (mancha) ao mesmo tempo.</p>
+  <p><strong>Frequência de uso:</strong> manhã e noite, depois da limpeza e da hidratação. Axila, virilha, região íntima e joelhos escuros.</p>
+  <p><strong>Pode usar no rosto?</strong> Sim, manhã e noite, sempre com hidratante e filtro solar obrigatórios.</p>
+  <div class="destaque-aviso"><strong>Alerta de falsificação:</strong> esse produto é muito falsificado. Compre apenas em farmácias físicas ou em loja online oficial. Desconfie de preços muito abaixo do mercado.</div>
+</div>
+
+<div class="passo-card">
+  <span class="passo-num">PASSO 4 — Diariamente</span>
+  <h3>Filtro Solar nas áreas expostas</h3>
+  <p><strong>Obrigatório</strong> nas áreas expostas ao sol: colo, joelhos, braços (e na axila quando você usar regata).</p>
+  <p>Sem filtro solar, o sol <strong>desfaz o trabalho do clareador</strong> — você gasta dinheiro e energia, e a pele volta a escurecer.</p>
+</div>
+
+<h2>Por que às vezes não funciona</h2>
+
+<p>O clareador não age sozinho. Se o resultado não aparece, geralmente é porque algum desses pontos está faltando:</p>
+
+<ul>
+  <li><strong>Não está limpando a área antes</strong> — o resíduo de desodorante bloqueia a penetração.</li>
+  <li><strong>Está usando desodorante aerossol</strong> — continua irritando e escurecendo enquanto você tenta clarear.</li>
+  <li><strong>Não está hidratando</strong> — o atrito continua causando escurecimento.</li>
+  <li><strong>Não está usando filtro solar</strong> nas áreas expostas — o sol desfaz o trabalho do clareador.</li>
+  <li><strong>Não está sendo constante</strong> — clareamento corporal leva semanas de uso regular pra aparecer.</li>
+</ul>
+
+<h2>Resumo do Protocolo</h2>
+
+<table>
+  <tr><th>Momento</th><th>Passo</th><th>O que fazer</th></tr>
+  <tr><td><strong>Sempre</strong></td><td>1º — Limpeza</td><td>Sabonete + óleo de limpeza 1x por semana pra remover resíduos do desodorante</td></tr>
+  <tr><td><strong>Sempre</strong></td><td>2º — Hidratação</td><td>Hidratante corporal leve na área limpa e seca</td></tr>
+  <tr><td><strong>Manhã e noite</strong></td><td>3º — Clareador</td><td>Clareador Dérmico Cicatribem sobre a pele hidratada</td></tr>
+  <tr><td><strong>Diariamente</strong></td><td>4º — Filtro Solar</td><td>Obrigatório nas áreas expostas ao sol</td></tr>
+  <tr><td><strong>Substituir</strong></td><td>Desodorante</td><td>Trocar aerossol por creme ou roll-on sem álcool</td></tr>
+</table>
+
+<div class="produto-card" style="margin-top: 2.5em;">
+  <div class="produto-header">
+    <div class="produto-foto-wrap">
+      <img src="PRODUTOS/47-clareador-dermico-cicatribem.png" alt="Clareador Dérmico Cicatribem">
+    </div>
+    <div class="produto-titulo">
+      <h3>Clareador Dérmico Cicatribem</h3>
+      <span class="preco">R$ 30 a R$ 60</span>
+      <span class="categoria-tag">clareador corporal</span>
+      <a href="https://s.shopee.com.br/9KfHHrrJQo" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a>
+    </div>
+  </div>
+  <div class="produto-info">
+    <p><span class="label-info">O que é:</span> Clareador corporal com 6 ativos clareadores combinados em uma fórmula hidratante. O produto principal do protocolo acima.</p>
+    <p><span class="label-info">Pra quê serve:</span> Axila, virilha, região íntima, joelhos escuros, cotovelos escuros. Pode usar também no rosto.</p>
+    <p><span class="label-info">Quanto aplicar:</span> uma camadinha fina — o suficiente pra cobrir a área escurecida. Não exagere, mais não acelera.</p>
+    <p><span class="label-info">Onde aplicar:</span> SEMPRE em pele LIMPA e SECA. Aplique direto sobre a área a clarear (axila, virilha, joelhos, cotovelos, dorso das mãos, ou rosto).</p>
+    <p><span class="label-info">Como aplicar:</span> espalhe com a ponta dos dedos em movimentos circulares suaves até absorver. Massagem leve, sem esfregar com força.</p>
+    <p><span class="label-info">Frequência:</span> manhã E noite, depois da limpeza e da hidratação. <strong>Pular dias atrasa o resultado.</strong></p>
+    <p><span class="label-info">Tempo pra absorver:</span> 3 a 5 minutos. Espere antes de vestir roupa pra não passar tudo no tecido.</p>
+    <p><span class="label-info">Quando ver resultado:</span> 30 a 90 dias dependendo da área e do tom inicial. Áreas íntimas demoram mais.</p>
+    <div class="destaque-aviso"><strong>Cuidados muito importantes:</strong>
+      <ul style="margin-top:0.5em;">
+        <li><strong>Filtro solar nas áreas expostas é OBRIGATÓRIO de manhã.</strong> Sem filtro, o sol desfaz o trabalho.</li>
+        <li><strong>Não use em pele com ferida aberta, irritação ou após depilação recente</strong> (aguarde pelo menos 24h depois de depilar).</li>
+        <li>Se a pele ardeu, ressecou muito ou descamou, pause por 3 dias e volte alternando os dias.</li>
+        <li>Não use durante gravidez ou amamentação sem consultar o médico.</li>
+        <li><strong>Sobre falsificações:</strong> esse produto é muito copiado. Compre APENAS em farmácias físicas reconhecidas ou na loja oficial online da marca. Preço muito abaixo do normal é sinal de falsificação.</li>
+      </ul>
+    </div>
+    <p><span class="label-info">Onde encontrar:</span> Farmácias físicas ou loja oficial online.</p>
+  </div>
+</div>
+</div>
+
+<div class="page-block">
+<div class="secao-categoria">
+  <h2>Protocolo Tchau Pescoço de Frango</h2>
+  <span class="secao-subtitle">3 produtos + constância pra firmar pescoço e colo em 2 meses</span>
+</div>
+
+<div class="aviso">
+  <h2>Aviso honesto antes de começar</h2>
+  <p>Existem duas partes do corpo que mais entregam a idade real de uma pessoa: <strong>o pescoço e as mãos</strong>. Muitas mulheres (e até artistas famosas) cuidam muito bem do rosto com procedimentos e skincare, mas <strong>esquecem completamente do pescoço</strong> — e aí o contraste aparece de um jeito cruel: o rosto parece de 45, o pescoço parece de 65.</p>
+  <p>A boa notícia: você NÃO precisa de procedimento caro pra melhorar muito. Com 3 produtos simples e constância, o resultado começa a aparecer em <strong>2 meses</strong>. Mas precisa ser TODO DIA. Pular semana zera o progresso.</p>
+</div>
+
+<h2>Por que o pescoço envelhece tão rápido</h2>
+
+<table>
+  <tr><th>Causa</th><th>O que acontece</th></tr>
+  <tr><td><strong>Pele mais fina</strong></td><td>A pele do pescoço tem menos glândulas sebáceas que o rosto — fica desidratada mais fácil, marca rápido</td></tr>
+  <tr><td><strong>Movimento constante</strong></td><td>Olhar pra baixo (celular, leitura) dobra a pele do pescoço várias vezes ao dia, criando linhas horizontais marcadas</td></tr>
+  <tr><td><strong>Esquecimento do filtro solar</strong></td><td>Quase ninguém passa filtro solar no pescoço todo dia — o sol acumulado por décadas mancha, enruga e flacidez</td></tr>
+  <tr><td><strong>Perda de colágeno</strong></td><td>A partir dos 40, a produção de colágeno cai 1% por ano — o pescoço perde firmeza progressivamente</td></tr>
+  <tr><td><strong>Aspecto de "galinha"</strong></td><td>O atrito da pele consigo mesma (curvar, dobrar, virar) deixa textura granulada e linhas verticais</td></tr>
+</table>
+
+<h2>Por que a Vitamina C é o melhor ativo pra essa área</h2>
+
+<p>A Vitamina C é a base do protocolo — e por boa razão. Ela age em 5 frentes ao mesmo tempo:</p>
+
+<ul>
+  <li><strong>Antioxidante potente</strong> — impede o envelhecimento precoce (oxidação = envelhecimento, e a Vit C bloqueia esse processo).</li>
+  <li><strong>Estimula colágeno</strong> — ajuda a manter firmeza e elasticidade da pele do pescoço.</li>
+  <li><strong>Clareadora</strong> — trata manchas no colo e pescoço causadas pelo sol e envelhecimento.</li>
+  <li><strong>Sinergista do filtro solar</strong> — age em conjunto com o protetor solar, potencializando a proteção contra raios UV.</li>
+  <li><strong>Devolve o viço</strong> — aquele glow saudável que faz a pele parecer viva e jovem.</li>
+</ul>
+
+<h2>O Protocolo Completo — 4 momentos do dia</h2>
+
+<div class="passo-card">
+  <span class="passo-num">PASSO 1 — Manhã (1º)</span>
+  <h3>Vitamina C</h3>
+  <p><strong>Quanto aplicar:</strong> 4 gotinhas na palma da mão.</p>
+  <p><strong>Onde aplicar:</strong> espalhe do pescoço descendo até o colo (área entre o pescoço e o início do busto). Cubra os dois lados e a parte de trás do pescoço.</p>
+  <p><strong>Como aplicar:</strong> com as duas mãos, deslize a Vit C de baixo pra cima (sempre nessa direção — do colo subindo até o queixo). Movimento firme mas suave.</p>
+  <p><strong>Tempo pra absorver:</strong> deixe absorver totalmente antes de passar o filtro solar — em torno de 3 a 5 minutos. Pele tem que estar SECA antes do filtro.</p>
+  <p><strong>Concentração indicada:</strong> Vitamina C estabilizada entre 10% e 20% pra resultado efetivo. Abaixo de 10% tem pouco efeito.</p>
+</div>
+
+<div class="passo-card">
+  <span class="passo-num">PASSO 2 — Manhã (2º)</span>
+  <h3>Filtro Solar</h3>
+  <p><strong>Quanto aplicar:</strong> 2 fileirinhas de dedo (do indicador ao médio, da ponta até a primeira dobra).</p>
+  <p><strong>Onde aplicar:</strong> cobrir o pescoço inteiro e o colo. Frente, lateral e parte de trás.</p>
+  <p><strong>Como aplicar:</strong> espalhe POR CIMA da Vitamina C já absorvida. Movimento sempre de baixo pra cima (não estique a pele puxando pra baixo).</p>
+  <p><strong>Por que é OBRIGATÓRIO:</strong> sem filtro solar, a Vitamina C e o Retinol da noite NÃO funcionam direito. O sol desfaz o trabalho de qualquer ativo em horas. Filtro solar é o que faz tudo o resto funcionar.</p>
+  <p><strong>FPS mínimo:</strong> 30. Ideal: 50 ou mais.</p>
+</div>
+
+<div class="passo-card">
+  <span class="passo-num">PASSO 3 — Tarde</span>
+  <h3>Reaplicação do Filtro Solar</h3>
+  <p><strong>Quando reaplicar:</strong> a cada 2 horas de exposição ao sol, ou após suar muito.</p>
+  <p><strong>Quanto aplicar:</strong> mesma quantidade da manhã (2 fileirinhas de dedo).</p>
+  <p><strong>Onde aplicar:</strong> pescoço inteiro + colo. Não esqueça das laterais.</p>
+  <p><strong>Como aplicar:</strong> direto sobre a pele (não precisa lavar antes). Use os dedos ou um pincel se preferir.</p>
+  <p><strong>Por que não pular:</strong> essa é a etapa que TODA mulher esquece, e é a mais importante. O filtro solar perde eficácia ao longo do dia — sem reaplicação, você está protegida só de manhã.</p>
+  <div class="destaque-aviso"><strong>Dica prática:</strong> deixe um protetor solar pequeno na bolsa, na gaveta do trabalho e ao lado da pia da cozinha. Onde você passa o dia, ele está. Sem isso, a reaplicação não acontece.</div>
+</div>
+
+<div class="passo-card">
+  <span class="passo-num">PASSO 4 — Noite</span>
+  <h3>Retinol + Massagem</h3>
+  <p><strong>Quanto aplicar:</strong> 3 a 4 gotinhas na palma da mão.</p>
+  <p><strong>Onde aplicar:</strong> pescoço inteiro (frente, lateral, parte de trás) e colo. Evite áreas com ferida ou irritação.</p>
+  <p><strong>Como aplicar:</strong> com as duas mãos, faça uma massagem suave de baixo pra cima (do colo subindo até o queixo). Movimento sempre ascendente — esse movimento ATIVA o efeito do retinol e potencializa a penetração.</p>
+  <p><strong>Por quanto tempo massagear:</strong> 2 a 3 minutos. Pode fazer enquanto ouve podcast, meditação ou só relaxa.</p>
+  <p><strong>Tempo pra absorver:</strong> espere 10 a 15 minutos antes de deitar — pra o retinol não passar todo no travesseiro.</p>
+  <p><strong>Frequência inicial:</strong> 2 a 3 vezes por semana nas primeiras 3 semanas. Depois aumenta gradualmente até 4-5 vezes na semana.</p>
+  <div class="destaque-aviso"><strong>Cuidados muito importantes:</strong>
+    <ul style="margin-top:0.5em;">
+      <li>Retinol SEMPRE à noite — NUNCA de manhã (a luz do sol desativa o retinol e pode causar irritação).</li>
+      <li>Se a pele do pescoço ressecar, descamar ou arder, pause por 3 dias e volte com menos frequência.</li>
+      <li><strong>O uso de retinol torna o filtro solar da manhã obrigatório, sem exceção</strong> — a pele fica mais sensível ao sol.</li>
+      <li>Evite combinar com outros ácidos fortes (glicólico, salicílico) na mesma noite.</li>
+      <li>Não use durante gravidez ou amamentação.</li>
+    </ul>
+  </div>
+</div>
+
+<h2>O Trio de Produtos — Onde Comprar</h2>
+
+<p>Esses 3 produtos formam o trio. Você não precisa das marcas exatas — qualquer Vit C estável a 10%, qualquer FPS 30+, e qualquer retinol cosmético serve. Mas aqui vão as referências que indico:</p>
+
+<div class="recomendacao">
+  <h3>1. Vitamina C — base do protocolo</h3>
+  <p><strong>Referência:</strong> Vitamina C VC-10 da Principia (10% estabilizada) — concentração ideal pra resultados visíveis sem irritar.</p>
+  <p><strong>Alternativas que servem:</strong> Vitamina C Garnier, Vitamina C L'Oréal, Vitamina C Noviole, Vitamina C Bisyou. Qualquer Vit C estável a 10% funciona — atenção à concentração.</p>
+  <p><strong>Por que essa concentração:</strong> abaixo de 10% tem pouco efeito visível. 10% é o equilíbrio ideal entre eficácia e tolerância da pele do pescoço (que é fina).</p>
+</div>
+
+<div class="recomendacao">
+  <h3>2. Filtro Solar — o melhor amigo da pele</h3>
+  <p><strong>Referência principal:</strong> Filtro Solar Principia PS-01 (já apresentado na Parte 2 desse guia, com link pra Shopee).</p>
+  <p><strong>Outras opções que também funcionam</strong> (todas listadas na Parte 2):</p>
+  <ul>
+    <li>Protetor Solar Needs Fluido — bom pra pele oleosa</li>
+    <li>Filtro Solar L'Oréal The Invisible — sem deixar resíduo branco</li>
+    <li>Filtro Solar Umbrella Urban — premium, com proteção anti-luz azul</li>
+  </ul>
+  <p><strong>Qualquer FPS 30 ou mais</strong>, idealmente em textura fluida (não muito grossa) pra o pescoço.</p>
+</div>
+
+<div class="recomendacao">
+  <h3>3. Retinol — o ativo que mais transforma</h3>
+  <p><strong>Referência principal:</strong> Celimax Retinal Shot (já listado na Parte 3 desse guia, K1 do ranking K-Beauty) — retinal a 0,1% com peptídeo Matrixyl e niacinamida na fórmula, alta potência sem irritar.<br><a href="https://s.shopee.com.br/4Va1Jlcbeg" target="_blank" rel="noopener" class="link-afiliado">Clique aqui para comprar com segurança</a></p>
+  <p><strong>Alternativas:</strong> Retinol Rn-03 da Principia, Retinol Pòpo (nacional, oftalmologicamente testado — já listado nessa Parte 4), ou qualquer retinoide cosmético com evidência científica.</p>
+  <p><strong>O que o retinol faz no pescoço:</strong></p>
+  <ul>
+    <li>Renova as células da superfície.</li>
+    <li>Estimula produção de colágeno e elastina.</li>
+    <li>Melhora textura, linhas finas e o aspecto de "pele de galinha".</li>
+    <li>Devolve viço e firmeza progressivamente.</li>
+  </ul>
+</div>
+
+<h2>Em quanto tempo ver resultado</h2>
+
+<p>O protocolo funciona com <strong>2 meses de uso constante</strong> pra você avaliar o resultado de verdade. Antes disso, é cedo demais pra julgar.</p>
+
+<ul>
+  <li><strong>Prevenção de novas manchas com filtro solar:</strong> imediato — funciona desde o 1º dia.</li>
+  <li><strong>Melhora de viço e luminosidade com Vit C:</strong> 2 a 4 semanas.</li>
+  <li><strong>Renovação celular com retinol:</strong> 4 a 8 semanas.</li>
+  <li><strong>Firmeza visível e suavização de linhas:</strong> 2 a 3 meses.</li>
+</ul>
+
+<p><strong>Constância é tudo.</strong> Os resultados são progressivos e se acumulam — não desista no meio do caminho. Pular 2 dias na semana zera quase tudo o que você ganhou.</p>
+
+<h2>Cola Rápida — Resumo do Protocolo</h2>
+
+<table>
+  <tr><th>Período</th><th>Produto</th><th>Ativo</th><th>Quantidade</th></tr>
+  <tr><td><strong>Manhã (1º)</strong></td><td>Vitamina C</td><td>Vit C 10%</td><td>4 gotas — pescoço e colo</td></tr>
+  <tr><td><strong>Manhã (2º)</strong></td><td>Filtro Solar</td><td>FPS 30 mínimo</td><td>2 fileirinhas de dedo</td></tr>
+  <tr><td><strong>Tarde</strong></td><td>Filtro Solar (reaplicar)</td><td>FPS 30 mínimo</td><td>Mesma quantidade da manhã</td></tr>
+  <tr><td><strong>Noite</strong></td><td>Retinol</td><td>Retinoide cosmético</td><td>3 a 4 gotas + massagem 2-3 min</td></tr>
+</table>
+
+<h2>Erros que matam o resultado</h2>
+
+<ol>
+  <li><strong>Cuidar do rosto e esquecer do pescoço.</strong> O erro mais comum. Aplique TUDO o que você usa no rosto também no pescoço e colo — sempre.</li>
+  <li><strong>Pular o filtro solar.</strong> Sem ele, Vit C e Retinol perdem eficácia. O sol desfaz tudo.</li>
+  <li><strong>Movimentar pra baixo na hora da aplicação.</strong> Sempre de BAIXO pra CIMA. Movimento pra baixo "puxa" a pele e contraria a drenagem natural.</li>
+  <li><strong>Usar retinol de manhã.</strong> Errado. Retinol só à noite — a luz do dia inativa o ativo e aumenta a chance de irritação.</li>
+  <li><strong>Esperar resultado em 2 semanas.</strong> Pele do pescoço leva 2 meses pra responder. Antes disso, é cedo demais. Não desista.</li>
+  <li><strong>Não reaplicar o filtro solar à tarde.</strong> O passo mais esquecido e o mais importante.</li>
+</ol>
+
+<div class="dica-verde">
+  <h4>Dica final do Han Jiwoo</h4>
+  <p>Minha avó Yoona, aos 78 anos, tem o pescoço de uma mulher de 55. Ela me disse uma vez que o segredo era simples: <em>"Sempre que cuidar do rosto, cuide do pescoço também. Sempre. Nunca um sem o outro."</em></p>
+  <p>Esse é o resumo desse protocolo. Tudo o que você passa no rosto, passa no pescoço também. Tudo. Sempre.</p>
+</div>
+</div>
+
+<div class="page-block">
+<h2>Última palavra</h2>
+
+<p>Você acabou de receber um guia que vai te poupar muito dinheiro com o tempo.</p>
+
+<p>A maior parte do que aparece de "lançamento revolucionário" no Instagram é marketing. O que funciona de verdade pra mulher 50+ é o que tá nessas páginas: ingredientes simples, com evidência, em produtos baratos ou de preço justo, combinados em protocolos claros.</p>
+
+<p>Antes de fechar esse guia, eu peço três coisas:</p>
+
+<ol>
+  <li><strong>Não saia comprando tudo.</strong> Escolha 1, no máximo 2 produtos, baseados no seu problema atual. Use por 30 a 60 dias com disciplina. Só depois compre outro.</li>
+  <li><strong>Sempre use protetor solar.</strong> É a regra de ouro. Sem ele, nenhum tratamento funciona, e a maioria dos ácidos PIORA as manchas. Filtro solar é o melhor clareador do mundo.</li>
+  <li><strong>Tenha paciência.</strong> Pele 50+ leva 30, 60, 90 dias pra responder. Mulher de 25 anos vê resultado em 7 dias. Você, mulher de 50, 60, 70 anos, vê em 30, 60, 90 — e isso é normal, não é culpa sua, e não é culpa do produto.</li>
+</ol>
+
+<blockquote>O segredo da pele coreana 50+ não está em produto novo. Está em <strong>cuidado constante, do jeito certo, por muito tempo</strong>. Quem entende isso ganha. Quem fica trocando de produto toda semana, perde.</blockquote>
+
+<p>Vai com calma. Vai bem. E qualquer dúvida, volta nesse guia.</p>
+
+<div class="aviso">
+  <h2>Aviso importante final</h2>
+  <p>Esse guia é <strong>conteúdo educativo</strong>, baseado em pesquisa com dermatologistas brasileiros e na literatura cosmética disponível. <strong>NÃO substitui consulta médica</strong> nem orientação dermatológica individual.</p>
+  <p><strong>Se você tem condição de pele específica</strong> — rosácea moderada/grave, melasma persistente, dermatite atópica, alopecia, ou qualquer pele que cause incômodo recorrente — <strong>procure um dermatologista</strong> antes de começar qualquer um desses produtos ou protocolos.</p>
+  <p><strong>Teste de alergia obrigatório:</strong> antes de usar qualquer produto novo pela primeira vez, aplique uma pequena quantidade na parte interna do braço e espere 24 horas. Se aparecer vermelhidão, coceira ou ardência, NÃO use.</p>
+  <p><strong>Protetor solar:</strong> diário, mesmo dentro de casa, mesmo em dias nublados. Sem protetor solar, ácidos e clareadores podem PIORAR as manchas em vez de melhorar.</p>
+  <p><strong>Combinação de produtos:</strong> não combine vários ácidos fortes (salicílico + tranexâmico + retinal + glicólico) na mesma rotina. Introduza um por vez, gradualmente. Pele 50+ é mais sensível e precisa de menos quantidade.</p>
+  <p><strong>Gravidez e amamentação:</strong> retinal, retinoides e ácidos fortes são contraindicados. Consulte médico antes.</p>
+  <p><strong>Não se automedique:</strong> minoxidil, espironolactona, finasterida, isotretinoína e qualquer remédio dermatológico oral ou tópico forte exigem <strong>prescrição médica</strong>. Esses não estão nesse guia.</p>
+  <p><strong>Para olheiras estruturais:</strong> nenhum creme do mundo devolve volume ósseo ou gordura perdida. Se sua olheira é fundinha por perda de volume, procure dermatologista pra avaliar preenchimento com ácido hialurônico.</p>
+</div>
+
+<div class="signature">— Han Jiwoo</div>
+</div>
+
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  const blocks = Array.from(document.querySelectorAll('.page-block'));
+  if (blocks.length < 2) return;
+
+  const titles = blocks.map((b, i) => {
+    const h1 = b.querySelector('h1');
+    const h2 = b.querySelector('h2');
+    if (i === 0 && h1) return h1.textContent.trim();
+    if (h2) return h2.textContent.trim().replace(/^[^\w]+/, '').trim();
+    if (h1) return h1.textContent.trim();
+    return 'Página ' + (i + 1);
+  });
+
+  const header = document.createElement('header');
+  header.className = 'app-header';
+  header.innerHTML = `
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">
+      <span class="menu-icon"><span></span><span></span><span></span></span>
+    </button>
+    <div class="app-title" id="appTitle"></div>
+    <button class="home-btn" id="homeBtn" aria-label="Voltar ao início">❀</button>
+  `;
+  document.body.insertBefore(header, document.body.firstChild);
+
+  const overlay = document.createElement('div');
+  overlay.className = 'drawer-overlay';
+  overlay.id = 'drawerOverlay';
+  document.body.appendChild(overlay);
+
+  const docTitle = document.querySelector('h1') ? document.querySelector('h1').textContent.trim() : 'Baratinhos da Pele de Cristal';
+  const drawer = document.createElement('aside');
+  drawer.className = 'drawer';
+  drawer.id = 'drawer';
+  drawer.innerHTML = `
+    <div class="drawer-header">
+      <div class="title">${docTitle}</div>
+      <button class="drawer-close" id="drawerClose" aria-label="Fechar">&times;</button>
+    </div>
+    <ul>
+      ${titles.map((t, i) => `
+        <li><a href="#" data-page="${i}">
+          <span class="num">${String(i + 1).padStart(2, '0')}</span>${t}
+        </a></li>
+      `).join('')}
+    </ul>
+  `;
+  document.body.appendChild(drawer);
+
+  const footer = document.createElement('footer');
+  footer.className = 'app-footer';
+  footer.innerHTML = `
+    <button class="nav-btn" id="prevBtn" type="button">
+      <span class="label">&larr; Anterior</span>
+      <span id="prevLabel">&mdash;</span>
+    </button>
+    <div class="page-counter" id="pageCounter">1 / ${blocks.length}</div>
+    <button class="nav-btn" id="nextBtn" type="button">
+      <span class="label">Próximo &rarr;</span>
+      <span id="nextLabel">&mdash;</span>
+    </button>
+  `;
+  document.body.appendChild(footer);
+
+  document.body.classList.add('app-mode');
+
+  let current = 0;
+  function shortTitle(t, max=24) {
+    if (!t) return '—';
+    return t.length > max ? t.slice(0, max-1) + '…' : t;
+  }
+  function show(i) {
+    if (i < 0) i = 0;
+    if (i >= blocks.length) i = blocks.length - 1;
+    blocks.forEach((p, idx) => p.classList.toggle('active', idx === i));
+    current = i;
+    document.getElementById('appTitle').textContent = titles[i] || docTitle;
+    document.getElementById('pageCounter').textContent = `${i + 1} / ${blocks.length}`;
+    document.getElementById('prevBtn').disabled = i === 0;
+    document.getElementById('nextBtn').disabled = i === blocks.length - 1;
+    document.getElementById('prevLabel').textContent = i > 0 ? shortTitle(titles[i - 1]) : 'Início';
+    document.getElementById('nextLabel').textContent = i < blocks.length - 1 ? shortTitle(titles[i + 1]) : 'Fim ❀';
+    drawer.querySelectorAll('a[data-page]').forEach(a => {
+      a.classList.toggle('active', parseInt(a.dataset.page) === i);
+    });
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    history.replaceState(null, '', '#p' + i);
+  }
+
+  document.getElementById('prevBtn').addEventListener('click', () => show(current - 1));
+  document.getElementById('nextBtn').addEventListener('click', () => show(current + 1));
+  document.getElementById('homeBtn').addEventListener('click', () => show(0));
+
+  function openDrawer() {
+    drawer.classList.add('open');
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDrawer() {
+    drawer.classList.remove('open');
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('menuBtn').addEventListener('click', openDrawer);
+  document.getElementById('drawerClose').addEventListener('click', closeDrawer);
+  overlay.addEventListener('click', closeDrawer);
+
+  drawer.querySelectorAll('a[data-page]').forEach(a => {
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      show(parseInt(a.dataset.page));
+      closeDrawer();
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeDrawer();
+    if (e.key === 'ArrowRight') show(current + 1);
+    if (e.key === 'ArrowLeft') show(current - 1);
+  });
+
+  const initHash = window.location.hash.match(/^#p(\d+)$/);
+  show(initHash ? parseInt(initHash[1]) : 0);
+})();
+</script>
+
+</body>
+</html>
